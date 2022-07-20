@@ -1,0 +1,1180 @@
+{
+	"Entity": [
+		{
+			"Name": "Person",
+			"DisplayName": null,
+			"IconName": "Person",
+			"IconUri": "IconItems/Person",
+			"MetaType": "guid8A586959-9837-47DE-8DBF-BC7031F01545",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "Name",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidB696CF9C-BF3C-4311-954F-DD809CEB38CC",
+					"IsLabel": true,
+					"idType": null
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "PicUrl",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidA3056048-D54F-462b-BF88-65FE24142A9F",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Username",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid22D95AE3-93EB-4BE9-8FB2-850CDA03F341",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Gender",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid7548369B-BA9A-4C4B-AEAD-0CB442EAFA27",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Email",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Phonenumber",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Latitude",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid5304A03B-FE47-4406-91E7-0D49EC8409A6",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Longitude",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Countrycode",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid040FF1BA-5EE3-4AE1-9C0F-C7831A0B4553",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Country",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "State",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Interests",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid447A8495-564B-47B2-BAA4-0A94F109E77E",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Description",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidF1CD62AF-428B-492d-B8C5-388FCEFA2617",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "FirstName",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid4DE7370B-60E5-4EB0-860E-4066D3DFD7B6",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "LastName",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid62B01C18-2E64-46D5-B2FF-3C69B4F76FEB",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "BirthDate",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidFE45F1C4-B198-4111-8123-F42D2CD6419D",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "BirthPlace",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidbfd2860d-c671-438c-a724-68031350bf69",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "CodiceFiscale",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidFE28AF88-47F8-40E9-A6A5-F0FE56A3518E",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "City",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Company",
+			"DisplayName": null,
+			"IconName": "Organ",
+			"IconUri": "IconItems/Organ",
+			"MetaType": "guidDB8328BF-3AC1-42A9-B09D-51F4FC93DC42",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Name",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "City",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Country",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Address",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid0CA71FDC-6CAE-4E54-B3A6-E61B5F5F46F9",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Status",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid77569ACF-AF00-4F9F-A4AA-94C5C0641EFA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Category",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid359AD9EB-8AC2-4c0d-82E6-AA77734CC423",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "VAT",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidF9DA2FC4-4B32-4d42-A178-A238274D4C5D",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "PhoneNumber",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Description",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidFDF13945-D368-4A90-A36C-370A9180D6E2",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Website",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Place",
+			"DisplayName": null,
+			"IconName": "Place",
+			"IconUri": "IconItems/Place",
+			"MetaType": "guidCD3DB3DB-55F6-440A-9BB8-3F3EE4DB4D52",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Event",
+			"DisplayName": null,
+			"IconName": "Event",
+			"IconUri": "IconItems/Event",
+			"MetaType": "guid1409ABE3-FB08-4DFA-B25A-BB0D141E3FBF",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "NumberOfPhotos",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid8BACDBBD-0DCC-4272-82E8-987507CAF643",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Description",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid359AD9EB-8AC2-4c0d-82E6-AA77734CC423",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Note",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid4643D715-F85C-4339-B2D7-07C9E91B807B",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Title",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid59A239DD-F3EE-4EE2-B3DB-FF5A1195E903",
+					"IsLabel": true,
+					"idType": null
+				},
+				{
+					"Name": "PicUrl",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidA3056048-D54F-462b-BF88-65FE24142A9F",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Post",
+			"DisplayName": null,
+			"IconName": "Envelopn",
+			"IconUri": "IconItems/Envelopn",
+			"MetaType": "guid69658CCE-D9C1-42E5-A3ED-046B761AC672",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Text",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidCC2BDFB2-96F6-459C-92E9-7BC0556A3553",
+					"IsLabel": true,
+					"idType": null
+				},
+				{
+					"Name": "CreationDate",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid80529703-5488-47EE-99EF-1137D462E964",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "NumberOfLikes",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid8BACDBBD-0DCC-4272-82E8-987507CAF643",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Picture",
+			"DisplayName": null,
+			"IconName": "Picturedoc",
+			"IconUri": "IconItems/Picturedoc",
+			"MetaType": "guid7F6A7B85-545E-4ECE-BF63-94CF5FB6D372",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "PicUrl",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidA3056048-D54F-462b-BF88-65FE24142A9F",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "CreationDate",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid80529703-5488-47EE-99EF-1137D462E964",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Album",
+			"DisplayName": null,
+			"IconName": "Case",
+			"IconUri": "IconItems/Case",
+			"MetaType": "guid88DD3232-E7A6-407C-9854-23E3C4AFC1F3",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "Title",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidB4EC8FC2-13EC-4df2-AE90-D7D5D4A4B621",
+					"IsLabel": true,
+					"idType": null
+				},
+				{
+					"Name": "NumberOfPhotos",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid8BACDBBD-0DCC-4272-82E8-987507CAF643",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Group",
+			"DisplayName": null,
+			"IconName": "Group of People",
+			"IconUri": "IconItems/Group of People",
+			"MetaType": "guid91C8D9E2-D475-4841-AEDA-9381C6FBE141",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Name",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C",
+					"IsLabel": true,
+					"idType": null
+				},
+				{
+					"Name": "Description",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid359AD9EB-8AC2-4c0d-82E6-AA77734CC423",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "NumberOfMembers",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid8BACDBBD-0DCC-4272-82E8-987507CAF643",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "CreationDate",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid80529703-5488-47EE-99EF-1137D462E964",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "City",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "CountryCode",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid040FF1BA-5EE3-4AE1-9C0F-C7831A0B4553",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Country",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "PicUrl",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidA3056048-D54F-462b-BF88-65FE24142A9F",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Latitude",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid5304A03B-FE47-4406-91E7-0D49EC8409A6",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Longitude",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "State",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Page",
+			"DisplayName": null,
+			"IconName": "Web Page",
+			"IconUri": "IconItems/Web Page",
+			"MetaType": "guid64825FD2-352C-4CFE-A42C-CE887A882BCF",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Document",
+			"DisplayName": null,
+			"IconName": "Document",
+			"IconUri": "IconItems/Document",
+			"MetaType": "guid3FF99984-6D1C-4265-866D-4980DC756E26",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "SourceOriginator",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA",
+					"IsLabel": false,
+					"idType": null
+				},
+				{
+					"Name": "Title",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidB4EC8FC2-13EC-4df2-AE90-D7D5D4A4B621",
+					"IsLabel": true,
+					"idType": null
+				},
+				{
+					"Name": "Url",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Snippet",
+			"DisplayName": null,
+			"IconName": "Snippet",
+			"IconUri": "IconItems/Snippet",
+			"MetaType": "guid8C5CB611-B9C2-4EBD-A9FC-847333753C7F",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				},
+				{
+					"Name": "Text",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guidCC2BDFB2-96F6-459C-92E9-7BC0556A3553",
+					"IsLabel": true,
+					"idType": null
+				},
+				{
+					"Name": "Url",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B",
+					"IsLabel": false,
+					"idType": null
+				}
+			]
+		},
+		{
+			"Name": "Fabbricato",
+			"DisplayName": null,
+			"IconName": "Place",
+			"IconUri": "IconItems/Place",
+			"MetaType": "guidEFEC388C-31E5-4CEB-AA1E-9E4159498ECE",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Terreno",
+			"DisplayName": null,
+			"IconName": "Terreno",
+			"IconUri": "IconItems/Terreno",
+			"MetaType": "guid47F47F3E-8A06-412B-86D6-393D438213EC",
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		}
+	],
+	"Link": [
+		{
+			"Name": "Any",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guidC9E54967-BBBF-494B-8348-B9D524F500FD",
+			"Color": "#000000",
+			"IsSymmetricLink": true,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Link",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guidC9E54967-BBBF-494B-8348-B9D524F500FD",
+			"Color": "#000000",
+			"IsSymmetricLink": true,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Indirect",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guidC9E54967-BBBF-494B-8348-B9D524F500FD",
+			"Color": "#000000",
+			"IsSymmetricLink": true,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Owns",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid1A451DF5-5A8E-4FA7-AE50-4EABE35B47C7",
+			"Color": "#004000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Author",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guidD0807C89-2E6F-4D59-B2ED-7F70EB21DFD1",
+			"Color": "#0000FF",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Addess",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid18E7D3EF-0694-4DB7-8AA7-4BCEF634391E",
+			"Color": "#800000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Cites",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid06D49204-3A42-4dbb-BFF5-779F84E5A64F",
+			"Color": "#FF8000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Member",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid209DFFD8-253C-474B-8209-312B182E6B38",
+			"Color": "#000000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Partnership With",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid920ABCCF-5451-475c-BE60-06760F40B35B",
+			"Color": "#000000",
+			"IsSymmetricLink": true,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Ceased position",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guidC8D8C36A-BB54-4F6A-A5B0-FAED1ABB1CDE",
+			"Color": "#FF0000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Follows",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guidED347B7E-5741-4C63-B3EC-FEE4BD338F9E",
+			"Color": "#000000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Friend",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid9ACD25C7-95E5-4C69-BB4E-F28E714EA8D8",
+			"Color": "#000000",
+			"IsSymmetricLink": true,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Comment",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid43AD27D6-8721-4333-8294-81A418C4B9ED",
+			"Color": "#FF8000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Like",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid993A9414-830E-4324-BB5A-803A1378E9E7",
+			"Color": "#FF8000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Contains",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid8B76234A-9577-462B-AF49-E836D8721691",
+			"Color": "#004000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Match",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guid2B55231E-521E-4502-8989-3BE1DB0B864D",
+			"Color": "#000000",
+			"IsSymmetricLink": true,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		},
+		{
+			"Name": "Carica",
+			"DisplayName": null,
+			"IconName": null,
+			"IconUri": null,
+			"MetaType": "guidB33B9CF0-3286-4CF4-A377-B6252FEFEA79",
+			"Color": "#000000",
+			"IsSymmetricLink": false,
+			"ShowArrows": true,
+			"Property": [
+				{
+					"Name": "Id",
+					"DisplayName": null,
+					"DataType": "TEXT",
+					"MetaType": "guid3ADBC93F-D02F-4E1D-8CD4-781BC80074C6",
+					"IsLabel": false,
+					"idType": "databaseID"
+				}
+			]
+		}
+	],
+	"Attribute": [
+		{
+			"Name": "sourceflag_BvDOrbis",
+			"DisplayName": null,
+			"DataType": "TEXT",
+			"MetaType": null,
+			"IsLabel": false,
+			"idType": null,
+			"Marker": {
+				"Name": "BvDOrbis",
+				"Uri": "IconAttribs/BvDOrbis",
+				"Position": 1
+			}
+		},
+		{
+			"Name": "sourceflag_BvDWorldCompliance",
+			"DisplayName": null,
+			"DataType": "TEXT",
+			"MetaType": null,
+			"IsLabel": false,
+			"idType": null,
+			"Marker": {
+				"Name": "BvDWorldCompliance",
+				"Uri": "IconAttribs/BvDWorldCompliance",
+				"Position": 1
+			}
+		},
+		{
+			"Name": "sourceflag_Catasto",
+			"DisplayName": null,
+			"DataType": "TEXT",
+			"MetaType": null,
+			"IsLabel": false,
+			"idType": null,
+			"Marker": {
+				"Name": "Catasto",
+				"Uri": "IconAttribs/Catasto",
+				"Position": 1
+			}
+		},
+		{
+			"Name": "sourceflag_CervedDandelion",
+			"DisplayName": null,
+			"DataType": "TEXT",
+			"MetaType": null,
+			"IsLabel": false,
+			"idType": null,
+			"Marker": {
+				"Name": "CervedDandelion",
+				"Uri": "IconAttribs/CervedDandelion",
+				"Position": 1
+			}
+		},
+		{
+			"Name": "sourceflag_DowJones",
+			"DisplayName": null,
+			"DataType": "TEXT",
+			"MetaType": null,
+			"IsLabel": false,
+			"idType": null,
+			"Marker": {
+				"Name": "DowJones",
+				"Uri": "IconAttribs/DowJones",
+				"Position": 1
+			}
+		},
+		{
+			"Name": "sourceflag_Twitter",
+			"DisplayName": null,
+			"DataType": "TEXT",
+			"MetaType": null,
+			"IsLabel": false,
+			"idType": null,
+			"Marker": {
+				"Name": "Twitter",
+				"Uri": "IconAttribs/Twitter",
+				"Position": 1
+			}
+		},
+		{
+			"Name": "sourceflag_qkEn",
+			"DisplayName": null,
+			"DataType": "TEXT",
+			"MetaType": null,
+			"IsLabel": false,
+			"idType": null,
+			"Marker": {
+				"Name": "qkEn",
+				"Uri": "IconAttribs/qkEn",
+				"Position": 1
+			}
+		}
+	]
+}

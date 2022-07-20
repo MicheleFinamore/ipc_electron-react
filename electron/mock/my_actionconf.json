@@ -1,0 +1,159 @@
+{
+    "contentEntities": [
+      {
+        "menuVoice": "",
+        "type": "PhoneNumberANT",
+        "subclassProperty": null,
+        "enableMenuReqPre": false,
+        "enableMenuReqPost": true,
+        "menuItem": [
+          {
+            "subMenu": [],
+            "onDerived": false,
+            "menuId": "GRAPHICS.LISTELEMS",
+            "isSeparator": false,
+            "parentMenuId": null,
+            "menuVoice": "List Elements",
+            "position": null,
+            "menuicon": null,
+            "onSingleSel": true,
+            "onMixedMergedItem": true,
+            "onMixedSimpleItem": true,
+            "onMixedMultiSel": true,
+            "onSimpleMultiSel": true
+          },
+          {
+            "subMenu": [],
+            "onDerived": false,
+            "menuId": "GRAPHICS.Copy",
+            "isSeparator": false,
+            "parentMenuId": "null",
+            "menuVoice": "Test Copia",
+            "relatedActionId": "GRAPHICS.CLIPBOARD.Copy",
+            "position": null,
+            "menuicon": null,
+            "onSingleSel": true,
+            "onMixedMergedItem": true,
+            "onMixedSimpleItem": true,
+            "onMixedMultiSel": true,
+            "onSimpleMultiSel": true
+          },
+          {
+            "subMenu": [],
+            "onDerived": false,
+            "menuId": "GRAPHICS.Paste",
+            "isSeparator": false,
+            "parentMenuId": "null",
+            "menuVoice": "Test Paste",
+            "relatedActionId": "GRAPHICS.CLIPBOARD.Paste",
+            "position": null,
+            "menuicon": null,
+            "onSingleSel": true,
+            "onMixedMergedItem": true,
+            "onMixedSimpleItem": true,
+            "onMixedMultiSel": true,
+            "onSimpleMultiSel": true
+          }
+        ]
+      },
+      {
+        "menuVoice": "",
+        "type": "ImeiANT",
+        "subclassProperty": null,
+        "enableMenuReqPre": false,
+        "enableMenuReqPost": true,
+        "menuItem": [
+            {
+              "subMenu": [],
+              "onDerived": false,
+              "menuId": "GRAPHICS.LISTELEMS",
+              "isSeparator": false,
+              "parentMenuId": null,
+              "menuVoice": "List Elements",
+              "position": null,
+              "menuicon": null,
+              "onSingleSel": true,
+              "onMixedMergedItem": true,
+              "onMixedSimpleItem": true,
+              "onMixedMultiSel": true,
+              "onSimpleMultiSel": true
+            },
+            {
+              "subMenu": [],
+              "onDerived": false,
+              "menuId": "GRAPHICS.Copy",
+              "isSeparator": false,
+              "parentMenuId": "null",
+              "menuVoice": "Test Copia Imei",
+              "relatedActionId": "GRAPHICS.CLIPBOARD.Copy",
+              "position": null,
+              "menuicon": null,
+              "onSingleSel": true,
+              "onMixedMergedItem": true,
+              "onMixedSimpleItem": true,
+              "onMixedMultiSel": true,
+              "onSimpleMultiSel": true
+            },
+            {
+              "subMenu": [],
+              "onDerived": false,
+              "menuId": "GRAPHICS.Paste",
+              "isSeparator": false,
+              "parentMenuId": "null",
+              "menuVoice": "Test Paste",
+              "relatedActionId": "GRAPHICS.CLIPBOARD.Paste",
+              "position": null,
+              "menuicon": null,
+              "onSingleSel": true,
+              "onMixedMergedItem": true,
+              "onMixedSimpleItem": true,
+              "onMixedMultiSel": true,
+              "onSimpleMultiSel": true
+            }
+          ]
+      },
+      {
+        "menuVoice": "",
+        "type": "Place",
+        "subclassProperty": null,
+        "enableMenuReqPre": false,
+        "enableMenuReqPost": true,
+        "menuItem": [
+          {
+            "menuVoice": "Show on map",
+            "relatedActionId": "POLARIS.ANALYSIS.GIS",
+            "onDerived": true,
+            "onMixedMergedItem": true,
+            "onMixedSimpleItem": true,
+            "onMixedMultiSel": true,
+            "onSimpleMultiSel": true,
+            "timelineEnabled": false
+          }
+        ]
+      },
+      {
+        "menuVoice": "",
+        "type": "Post",
+        "subclassProperty": null,
+        "enableMenuReqPre": false,
+        "enableMenuReqPost": true,
+        "menuItem": [
+          {
+            "menuId": "POLARIS.ANALYSIS.TIMELINE",
+            "menuVoice": "Send to timeline",
+            "relatedActionId": "POLARIS.ANALYSIS.TIMELINE",
+            "onDerived": true,
+            "onMixedMergedItem": true,
+            "onMixedSimpleItem": true,
+            "onMixedMultiSel": true,
+            "onSimpleMultiSel": true,
+            "onSingleSel": true,
+            "timelineEnabled": false
+          }
+        ]
+      }
+    ],
+    "genericData": [],
+    "globalActions": []
+  }
+  

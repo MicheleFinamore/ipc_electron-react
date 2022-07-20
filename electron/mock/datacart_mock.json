@@ -1,0 +1,194 @@
+{
+    "items": [
+        {
+            "itemType": "entity",
+            "onMerge": "update",
+            "key": "00393299897693",
+            "type": "PhoneNumberANT"
+        },
+        {
+            "itemType": "entity",
+            "label": "35412508012465",
+            "style": "ANT Imei",
+            "onMerge": "update",
+            "key": "35412508012465",
+            "type": "ImeiANT",
+            "properties": {
+                "IMEI": {
+                    "value": "35412508012465"
+                },
+                "DatabaseGuid": {
+                    "value": ""
+                }
+            }
+        },
+        {
+            "itemType": "link",
+            "label": "13541",
+            "key": "LU:35412508012465-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LU:35412508012465-00393299897693"
+                }
+            },
+            "key1": "00393299897693",
+            "type1": "PhoneNumberANT",
+            "key2": "35412508012465",
+            "type2": "ImeiANT"
+        },
+        {
+            "itemType": "entity",
+            "label": "35977007802499",
+            "style": "ANT Imei",
+            "onMerge": "update",
+            "key": "35977007802499",
+            "type": "ImeiANT",
+            "properties": {
+                "IMEI": {
+                    "value": "35977007802499"
+                },
+                "DatabaseGuid": {
+                    "value": ""
+                }
+            }
+        },
+        {
+            "itemType": "link",
+            "label": "434",
+            "key": "LU:35977007802499-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LU:35977007802499-00393299897693"
+                }
+            },
+            "key1": "00393299897693",
+            "type1": "PhoneNumberANT",
+            "key2": "35977007802499",
+            "type2": "ImeiANT"
+        },
+        {
+            "itemType": "entity",
+            "label": "35412508019994",
+            "style": "ANT Imei",
+            "onMerge": "update",
+            "key": "35412508019994",
+            "type": "ImeiANT",
+            "properties": {
+                "IMEI": {
+                    "value": "35412508019994"
+                },
+                "DatabaseGuid": {
+                    "value": ""
+                }
+            }
+        },
+        {
+            "itemType": "link",
+            "label": "2",
+            "key": "LU:35412508019994-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LU:35412508019994-00393299897693"
+                }
+            },
+            "key1": "00393299897693",
+            "type1": "PhoneNumberANT",
+            "key2": "35412508019994",
+            "type2": "ImeiANT"
+        },
+        {
+            "itemType": "entity",
+            "label": "35583605736494",
+            "style": "ANT Imei",
+            "onMerge": "update",
+            "key": "35583605736494",
+            "type": "ImeiANT",
+            "properties": {
+                "IMEI": {
+                    "value": "35583605736494"
+                },
+                "DatabaseGuid": {
+                    "value": ""
+                }
+            }
+        },
+        {
+            "itemType": "link",
+            "label": "2",
+            "key": "LU:35583605736494-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LU:35583605736494-00393299897693"
+                }
+            },
+            "key1": "00393299897693",
+            "type1": "PhoneNumberANT",
+            "key2": "35583605736494",
+            "type2": "ImeiANT"
+        },
+        {
+            "itemType": "link",
+            "label": "979",
+            "key": "LE:35412508012465-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LE:35412508012465-00393299897693"
+                }
+            },
+            "key1": "35412508012465",
+            "type1": "ImeiANT",
+            "key2": "00393299897693",
+            "type2": "PhoneNumberANT"
+        },
+        {
+            "itemType": "link",
+            "label": "19",
+            "key": "LE:35977007802499-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LE:35977007802499-00393299897693"
+                }
+            },
+            "key1": "35977007802499",
+            "type1": "ImeiANT",
+            "key2": "00393299897693",
+            "type2": "PhoneNumberANT"
+        },
+        {
+            "itemType": "link",
+            "label": "2",
+            "key": "LE:35412508019994-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LE:35412508019994-00393299897693"
+                }
+            },
+            "key1": "35412508019994",
+            "type1": "ImeiANT",
+            "key2": "00393299897693",
+            "type2": "PhoneNumberANT"
+        },
+        {
+            "itemType": "link",
+            "label": "9",
+            "key": "LE:35583605736494-00393299897693",
+            "type": "Database Link",
+            "properties": {
+                "identityProperty": {
+                    "value": "LE:35583605736494-00393299897693"
+                }
+            },
+            "key1": "35583605736494",
+            "type1": "ImeiANT",
+            "key2": "00393299897693",
+            "type2": "PhoneNumberANT"
+        }
+    ]
+}
