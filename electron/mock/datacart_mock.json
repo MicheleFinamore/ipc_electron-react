@@ -4,7 +4,12 @@
             "itemType": "entity",
             "onMerge": "update",
             "key": "00393299897693",
-            "type": "PhoneNumberANT"
+            "type": "PhoneNumberANT",
+            "properties": {
+                "Numero": {
+                    "value": "3351277566"
+                }
+            }
         },
         {
             "itemType": "entity",

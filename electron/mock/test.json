@@ -1,0 +1,61 @@
+[
+    {
+        "itemType": "entity",
+        "onMerge": "update",
+        "key": "00393299897693",
+        "type": "PhoneNumberANT",
+        "properties": {
+            "Numero": {
+                "value": "3351277566"
+            }
+        }
+    },
+    {
+        "itemType": "entity",
+        "label": "35412508019994",
+        "style": "ANT Imei",
+        "onMerge": "update",
+        "key": "35412508019994",
+        "type": "ImeiANT",
+        "properties": {
+            "IMEI": {
+                "value": "35412508019994"
+            },
+            "DatabaseGuid": {
+                "value": ""
+            }
+        }
+    },
+    {
+        "itemType": "entity",
+        "label": "35583605736494",
+        "style": "ANT Imei",
+        "onMerge": "update",
+        "key": "35583605736494",
+        "type": "ImeiANT",
+        "properties": {
+            "IMEI": {
+                "value": "35583605736494"
+            },
+            "DatabaseGuid": {
+                "value": ""
+            }
+        }
+    },
+    {
+        "itemType": "entity",
+        "label": "35977007802499",
+        "style": "ANT Imei",
+        "onMerge": "update",
+        "key": "35977007802499",
+        "type": "ImeiANT",
+        "properties": {
+            "IMEI": {
+                "value": "35977007802499"
+            },
+            "DatabaseGuid": {
+                "value": ""
+            }
+        }
+    }
+]

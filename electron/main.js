@@ -6,12 +6,98 @@ const { ipcMain } = require("electron/main");
 const express_app = express();
 const tcpPortUsed = require("tcp-port-used");
 const { execFile, exec } = require("node:child_process");
-const { stdout, stdin } = require("process");
+
 const fs = require("fs");
 const axios = require("axios").default;
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
+const chokidar = require('chokidar');
+const os = require('os')
+
+console.log(`CURRENT USERNAME : ${os.userInfo().username}`);
+
 let mainWindow = null;
+
+
+//Initialize watcher for folder
+const watcher = chokidar.watch(path.join(__dirname, "/mock/communication_folder"), {
+  persistent: true
+});
+
+watcher
+  .on('add', path => {
+    console.log(`File ${path} has been added to the folder`)
+
+    fs.readFile(path, (err,data) => {
+      if(err) {
+        console.error(`Error while reading new file added to the folder : ${err.message}`);
+        return;
+      }
+
+      const parsed_data = JSON.parse(data);
+      console.log('Dati parsati', parsed_data);
+      const second_entity = {
+        itemType: 'entity',
+        onMerge: 'update',
+        key: '00393282553163',
+        type: 'PhoneNumberANT',
+        properties: { Numero: '3282553163'}
+      }
+
+    //   {
+    //     "itemType": "link",
+    //     "label": "434",
+    //     "key": "LU:35977007802499-00393299897693",
+    //     "type": "Database Link",
+    //     "properties": {
+    //         "identityProperty": {
+    //             "value": "LU:35977007802499-00393299897693"
+    //         }
+    //     },
+    //     "key1": "00393299897693",
+    //     "type1": "PhoneNumberANT",
+    //     "key2": "35977007802499",
+    //     "type2": "ImeiANT"
+    // },
+      const link = {
+        itemType : 'link',
+        label : '999',
+        key : 'LU:00393282553163-00393299897693',
+        type : 'Database Link',
+        properties : {
+          identityProperty : {
+            value : 'LU:00393282553163-00393299897693'
+          }
+        },
+        key1 : '00393299897693',
+        type1 : 'PhoneNumberANT',
+        type2 : 'PhoneNumberANT',
+        key2 : '00393282553163'
+      }
+
+      const items = []
+
+      items.push(parsed_data[0])
+      items.push(second_entity)
+      items.push(link)
+      console.log('items', items);
+      console.log('items stringed', JSON.stringify(items));
+
+      const payload = { datacart: {
+        items : items
+      } };
+      console.log(payload);
+
+      doPostRequest("http://localhost:5500/sendDataCart", payload);
+
+
+
+    })
+
+
+  })
+  .on('change', path => console.log(`File ${path} has been changed`))
+  .on('unlink', path => console.log(`File ${path} has been removed`))
+
+
 
 function createWindow() {
   const startUrl = isDev
@@ -37,7 +123,7 @@ function createWindow() {
   // mainWindow.loadFile("./electron/index.html");
   mainWindow.show();
 
-  Menu.setApplicationMenu(null);
+  // Menu.setApplicationMenu(null);
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools({ mode: "detach" });
@@ -88,6 +174,7 @@ ipcMain.on("sendDatacart", (event, args) => {
   );
 
   const payload = { datacart: JSON.parse(datacart_mock) };
+  console.log('payload', payload)
 
   doPostRequest("http://localhost:5500/sendDataCart", payload);
 });
@@ -229,15 +316,18 @@ const waitPortListening = (port, callback) => {
     },
     (err) => {
       console.error("Error on waitUntilused:", err.message);
+      throw new Error(`Error in waitingUntilUse : ${err.message}`)
     }
   );
 };
 
 const registerClient = () => {
   console.log("Inside register client");
+
   let datamodel_conf_raw = fs.readFileSync(
     path.join(__dirname, "/mock/custom_datamodel.json")
   );
+
   let action_conf_raw = fs.readFileSync(path.join(__dirname, "/mock/my_actionconf.json"));
 
   const pack = {
@@ -246,9 +336,9 @@ const registerClient = () => {
     type: "REGISTER",
     // dmx: datamodel_conf_raw,
   };
-  console.log("Parsed DMX ...");
-  console.log(pack);
-  console.log("Sending the request...");
+  // console.log("Parsed DMX ...");
+  // console.log(pack);
+  console.log("Sending the register request...");
 
   doPostRequest("http://localhost:5500/register", pack);
 };
