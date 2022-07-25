@@ -9,96 +9,95 @@ const { execFile, exec } = require("node:child_process");
 
 const fs = require("fs");
 const axios = require("axios").default;
-const chokidar = require('chokidar');
-const os = require('os')
+const chokidar = require("chokidar");
+const os = require("os");
 
 console.log(`CURRENT USERNAME : ${os.userInfo().username}`);
 
 let mainWindow = null;
 
-
 //Initialize watcher for folder
-const watcher = chokidar.watch(path.join(__dirname, "/mock/communication_folder"), {
-  persistent: true
-});
+const watcher = chokidar.watch(
+  path.join(__dirname, "/mock/communication_folder"),
+  {
+    persistent: true,
+  }
+);
 
 watcher
-  .on('add', path => {
-    console.log(`File ${path} has been added to the folder`)
+  .on("add", (path) => {
+    console.log(`File ${path} has been added to the folder`);
 
-    fs.readFile(path, (err,data) => {
-      if(err) {
-        console.error(`Error while reading new file added to the folder : ${err.message}`);
+    fs.readFile(path, (err, data) => {
+      if (err) {
+        console.error(
+          `Error while reading new file added to the folder : ${err.message}`
+        );
         return;
       }
 
       const parsed_data = JSON.parse(data);
-      console.log('Dati parsati', parsed_data);
+      console.log("Dati parsati", parsed_data);
       const second_entity = {
-        itemType: 'entity',
-        onMerge: 'update',
-        key: '00393282553163',
-        type: 'PhoneNumberANT',
-        properties: { Numero: '3282553163'}
-      }
+        itemType: "entity",
+        onMerge: "update",
+        key: "00393282553163",
+        type: "PhoneNumberANT",
+        properties: { Numero: "3282553163" },
+      };
 
-    //   {
-    //     "itemType": "link",
-    //     "label": "434",
-    //     "key": "LU:35977007802499-00393299897693",
-    //     "type": "Database Link",
-    //     "properties": {
-    //         "identityProperty": {
-    //             "value": "LU:35977007802499-00393299897693"
-    //         }
-    //     },
-    //     "key1": "00393299897693",
-    //     "type1": "PhoneNumberANT",
-    //     "key2": "35977007802499",
-    //     "type2": "ImeiANT"
-    // },
       const link = {
-        itemType : 'link',
-        label : '999',
-        key : 'LU:00393282553163-00393299897693',
-        type : 'Database Link',
-        properties : {
-          identityProperty : {
-            value : 'LU:00393282553163-00393299897693'
-          }
+        itemType: "link",
+        label: "999",
+        key: "LU:00393282553163-00393299897693",
+        type: "Database Link",
+        properties: {
+          identityProperty: {
+            value: "LU:00393282553163-00393299897693",
+          },
         },
-        key1 : '00393299897693',
-        type1 : 'PhoneNumberANT',
-        type2 : 'PhoneNumberANT',
-        key2 : '00393282553163'
-      }
+        key1: "00393299897693",
+        type1: "PhoneNumberANT",
+        type2: "PhoneNumberANT",
+        key2: "00393282553163",
+      };
 
-      const items = []
+      const items = [];
 
-      items.push(parsed_data[0])
-      items.push(second_entity)
-      items.push(link)
-      console.log('items', items);
-      console.log('items stringed', JSON.stringify(items));
+      items.push(parsed_data[0]);
+      items.push(second_entity);
+      items.push(link);
+      console.log("items", items);
+      console.log("items stringed", JSON.stringify(items));
 
-      const payload = { datacart: {
-        items : items
-      } };
+      const payload = {
+        datacart: {
+          items: items,
+        },
+      };
       console.log(payload);
 
-      doPostRequest("http://localhost:5500/sendDataCart", payload);
+      sendDataCart("I'm trying to expand the entity", payload);
 
+      // // try{
 
+      // //   doPostRequest("http://localhost:5500/sendDataCart", payload);
+      // //   mainWindow.webContents.send('consoleMessages', 'datacart sent')
 
-    })
+      // // }catch(err){
+      // //   mainWindow.webContents.send('consoleMessages', err.message)
+      // //   console.error(err.message);
+      // // }
 
-
+      fs.unlink(path, (err) => {
+        if (err) console.error("Error while deleting file", err.message);
+      });
+    });
   })
-  .on('change', path => console.log(`File ${path} has been changed`))
-  .on('unlink', path => console.log(`File ${path} has been removed`))
+  .on("change", (path) => console.log(`File ${path} has been changed`))
+  .on("unlink", (path) => console.log(`File ${path} has been removed`));
 
-
-
+// crea la window electron
 function createWindow() {
   const startUrl = isDev
     ? "http://localhost:3001"
@@ -111,6 +110,8 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    minWidth: 600,
+    minHeight: 600,
     webPreferences: {
       // nodeIntegration: true,
       preload: preloadUrl,
@@ -120,10 +121,8 @@ function createWindow() {
   });
 
   mainWindow.loadURL(startUrl);
-  // mainWindow.loadFile("./electron/index.html");
-  mainWindow.show();
 
-  // Menu.setApplicationMenu(null);
+  mainWindow.show();
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools({ mode: "detach" });
@@ -164,7 +163,8 @@ app.on("activate", () => {
   }
 });
 
-ipcMain.on("sendDatacart", (event, args) => {
+// handler per invio datacart
+ipcMain.on("sendDataCart", (event, args) => {
   console.log("Send Data Cart ...");
   console.log(args);
   // const payload = {datacart : 'datacart from ipc-electron-react'}
@@ -174,9 +174,15 @@ ipcMain.on("sendDatacart", (event, args) => {
   );
 
   const payload = { datacart: JSON.parse(datacart_mock) };
-  console.log('payload', payload)
+  sendDataCart("I'm trying to send the dataCart", payload);
+  // console.log('payload', payload)
 
-  doPostRequest("http://localhost:5500/sendDataCart", payload);
+  // doPostRequest("http://localhost:5500/sendDataCart", payload);
+});
+
+// handler per registrazione client
+ipcMain.on("registerClient", (event, data) => {
+  registerClient();
 });
 
 ipcMain.handle("greet_main", (event, args) => {
@@ -261,9 +267,9 @@ const startKL = () => {
   try {
     waitPortListening(5500, registerClient);
   } catch (error) {
-    console.error('Error inside startkl ', error);
+    console.error("Error inside startkl ", error);
   }
-  
+
   // tcpPortUsed.waitUntilUsed(5500, 500, 1800000).then(
   //   () => {
   //     console.log(
@@ -316,31 +322,74 @@ const waitPortListening = (port, callback) => {
     },
     (err) => {
       console.error("Error on waitUntilused:", err.message);
-      throw new Error(`Error in waitingUntilUse : ${err.message}`)
+      throw new Error(`Error in waitingUntilUse : ${err.message}`);
     }
   );
 };
 
-const registerClient = () => {
+const registerClient = async () => {
   console.log("Inside register client");
 
   let datamodel_conf_raw = fs.readFileSync(
     path.join(__dirname, "/mock/custom_datamodel.json")
   );
 
-  let action_conf_raw = fs.readFileSync(path.join(__dirname, "/mock/my_actionconf.json"));
+  let action_conf_raw = fs.readFileSync(
+    path.join(__dirname, "/mock/my_actionconf.json")
+  );
 
   const pack = {
     dmx: JSON.parse(datamodel_conf_raw),
-    acx : JSON.parse(action_conf_raw),
+    acx: JSON.parse(action_conf_raw),
     type: "REGISTER",
     // dmx: datamodel_conf_raw,
   };
   // console.log("Parsed DMX ...");
   // console.log(pack);
   console.log("Sending the register request...");
+  mainWindow.webContents.send(
+    "consoleMessages",
+    "Sending the register request..."
+  );
 
-  doPostRequest("http://localhost:5500/register", pack);
+  try {
+    // let response = doPostRequest("http://localhost:5500/register", pack);
+    let res = await axios.post("http://localhost:5500/register", pack);
+    if (res.status < 200 || res.status > 299) {
+      throw new Error("Invalid response");
+    }
+    let data = res.data;
+    console.log('data ', data)
+    let consoleMessage = "I got register response --> " + data.message;
+    mainWindow.webContents.send("consoleMessages", consoleMessage);
+  } catch (error) {
+    // console.log('error in register : '+ error.message);
+    mainWindow.webContents.send(
+      "consoleMessages",
+      "Error while registering the client --> " + error.message
+    );
+  }
+};
+
+const sendDataCart = async (message, payload) => {
+  mainWindow.webContents.send("consoleMessages", message);
+
+  try {
+    // let response = doPostRequest("http://localhost:5500/register", pack);
+    let res = await axios.post("http://localhost:5500/sendDataCart", payload);
+    if (res.status < 200 || res.status > 299) {
+      throw new Error("Invalid response in sendDataCart");
+    }
+    let data = res.data;
+    let consoleMessage = "I got sendDataCart response -->" + data.message;
+    mainWindow.webContents.send("consoleMessages", consoleMessage);
+  } catch (error) {
+    // console.log('error in register : '+ error.message);
+    mainWindow.webContents.send(
+      "consoleMessages",
+      "Error while sending the dataCart --> " + error.message
+    );
+  }
 };
 
 async function doPostRequest(endpoint, payload) {
@@ -352,8 +401,9 @@ async function doPostRequest(endpoint, payload) {
     }
     let data = res.data;
     console.log("I got response... ", data);
+    return data;
   } catch (error) {
-    throw new Error(`error for POST to : ${endpoint} : ${error}`);
+    throw new Error(`error for POST to ${endpoint} : ${error.message}`);
     // console.error(`error for POST to : ${endpoint} : ${error}`);
   }
 }

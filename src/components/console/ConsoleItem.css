@@ -1,0 +1,9 @@
+.consoleItem{
+    width: 100%;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
