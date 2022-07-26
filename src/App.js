@@ -1,13 +1,10 @@
 import "./App.css";
 import { useState, useEffect, useCallback } from "react";
 import ConsoleItem from "./components/console/ConsoleItem";
-
-// import {ipcRender} from 'electron'
+import CustomButton from "./components/Ui/CustomButton";
 
 function App() {
   const [messages, setMessages] = useState(['Application Started...']);
-
-
 
   // gestisce i messaggi in arrivo da electron durante le operazioni e li aggiunge allo state messages per stamparli a video sulla console del client
   const consoleMessagesHandler = useCallback(
@@ -30,13 +27,6 @@ function App() {
     };
   }, [consoleMessagesHandler]);
 
-  // window.ipc_renderer.onIncomingData((event,data) => {
-  //   // event.preventDefault()
-  //   // event.stopImmediatePropagation()
-  //   console.log(event);
-  //   console.log("dati ricevuti dalla get", data);
-  // } );
-
   const registerClient = () => {
     window.ipc_renderer.send("registerClient", "");
     const currMessages = [...messages ];
@@ -55,9 +45,7 @@ function App() {
   };
 
   const testConsole = () => {
-    // const currMessages = [...messages]
-    // currMessages.push('Test consoleeee')
-    // setMessages(currMessages)
+
     setMessages(prevMessages =>([...prevMessages, 'Test Console']) )
   };
 
@@ -65,25 +53,17 @@ function App() {
     <div className="App">
       <div className="app-content">
         <div className="commands">
-          <button className="customButton" onClick={testDataCart}>
-            Send DataCart
-          </button>
-          <button className="customButton" onClick={registerClient}>
-            Register Client
-          </button>
-          <button className="customButton" onClick={testConsole}>
-            Test Console
-          </button>
-          <button className="customButton" onClick={()=> setMessages([])}>
-            Clear Console
-          </button>
+          <CustomButton handler={registerClient} text={'Register Client'} />
+          <CustomButton handler={testDataCart} text={'Send DataCart'} />
+          <CustomButton handler={()=> setMessages([])} text={'Clear Console'} />
+          <CustomButton handler={testConsole} text={'Test Console'} />
         </div>
-
         <div className="log-container">
           {messages.map((elem, index) => {
             return <ConsoleItem text={elem} key={index}></ConsoleItem>;
           })}
         </div>
+        
       </div>
     </div>
   );

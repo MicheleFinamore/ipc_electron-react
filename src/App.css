@@ -26,38 +26,22 @@ body{
   width: 100%;
   /* border-radius: 1rem; */
   background-color: var(--superdark-grey);
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr;
   /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
+  /* align-items: center;
+  flex-direction: column; */
 }
 
 .commands{
-  height: 80px;
+  /* height: 80px; */
+  padding: 1.3rem 0.7rem;
   width: 100%;
   background-color: var(--dark-grey);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.customButton{
-  border: 1px solid var(--orange);
-  background-color: var(--orange);
-  color: black;
-  padding: 3px 4px;
-  border-radius: 0.2rem;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.customButton:hover{
-  background-color: var(--light-orange);
-  border: 1px solid var(--light-orange);
-  /* transform: scale(1.02); */
-  /* transition: all 100ms ease; */
 }
 
 .log-container{

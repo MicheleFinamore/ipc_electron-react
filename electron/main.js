@@ -128,11 +128,12 @@ function createWindow() {
   mainWindow.webContents.openDevTools({ mode: "detach" });
 }
 
+
+
 app.on("ready", () => {
   createWindow();
 
   startKL();
-
   // // express_app.use(express.json())
   // // express_app.use(express.urlencoded({extended:false}))
 
@@ -143,11 +144,14 @@ app.on("ready", () => {
   // //     message: "ti ho inviato dei dati dal main",
   // //   });
 
+  
   // //   res.status(200).json({ message: "Dentro la get del server" });
   // // });
 
   // // express_app.listen(5500, () => console.log("Server started on port 5500"));
 });
+
+
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
@@ -165,8 +169,8 @@ app.on("activate", () => {
 
 // handler per invio datacart
 ipcMain.on("sendDataCart", (event, args) => {
-  console.log("Send Data Cart ...");
-  console.log(args);
+  console.log("Send Data Cart inside electron handler...");
+  // console.log(args);
   // const payload = {datacart : 'datacart from ipc-electron-react'}
 
   let datacart_mock = fs.readFileSync(
@@ -174,7 +178,7 @@ ipcMain.on("sendDataCart", (event, args) => {
   );
 
   const payload = { datacart: JSON.parse(datacart_mock) };
-  sendDataCart("I'm trying to send the dataCart", payload);
+  sendDataCart("I'm trying to send the dataCart through axios...", payload);
   // console.log('payload', payload)
 
   // doPostRequest("http://localhost:5500/sendDataCart", payload);
@@ -328,7 +332,7 @@ const waitPortListening = (port, callback) => {
 };
 
 const registerClient = async () => {
-  console.log("Inside register client");
+  console.log("Inside register client function");
 
   let datamodel_conf_raw = fs.readFileSync(
     path.join(__dirname, "/mock/custom_datamodel.json")
@@ -349,7 +353,7 @@ const registerClient = async () => {
   console.log("Sending the register request...");
   mainWindow.webContents.send(
     "consoleMessages",
-    "Sending the register request..."
+    "Sending the register request through axios..."
   );
 
   try {
@@ -363,7 +367,7 @@ const registerClient = async () => {
     let consoleMessage = "I got register response --> " + data.message;
     mainWindow.webContents.send("consoleMessages", consoleMessage);
   } catch (error) {
-    // console.log('error in register : '+ error.message);
+    console.log('error in registerclient call : '+ error.message);
     mainWindow.webContents.send(
       "consoleMessages",
       "Error while registering the client --> " + error.message
@@ -384,7 +388,7 @@ const sendDataCart = async (message, payload) => {
     let consoleMessage = "I got sendDataCart response -->" + data.message;
     mainWindow.webContents.send("consoleMessages", consoleMessage);
   } catch (error) {
-    // console.log('error in register : '+ error.message);
+    console.log('error in sendatacart call : '+ error.message);
     mainWindow.webContents.send(
       "consoleMessages",
       "Error while sending the dataCart --> " + error.message
