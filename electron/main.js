@@ -1,18 +1,17 @@
-const { app, BrowserWindow, webContents, Menu } = require("electron");
+const { app, BrowserWindow, dialog } = require("electron");
 const path = require("path");
 const isDev = require("electron-is-dev");
 const express = require("express");
 const { ipcMain } = require("electron/main");
 const express_app = express();
 const tcpPortUsed = require("tcp-port-used");
-const { execFile, exec } = require("node:child_process");
+const { exec } = require("node:child_process");
 
 const fs = require("fs");
 const axios = require("axios").default;
 const chokidar = require("chokidar");
-const os = require("os");
 
-console.log(`CURRENT USERNAME : ${os.userInfo().username}`);
+const AsyncMethods = require("./utils");
 
 let mainWindow = null;
 
@@ -103,10 +102,6 @@ function createWindow() {
     ? "http://localhost:3001"
     : `file://${path.join(__dirname, "../build/index.html")}`;
 
-  const preloadUrl = isDev
-    ? path.join(__dirname, "preload.js")
-    : path.join(__dirname, "preload.js");
-
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -114,7 +109,7 @@ function createWindow() {
     minHeight: 600,
     webPreferences: {
       // nodeIntegration: true,
-      preload: preloadUrl,
+      preload: path.join(__dirname, "preload.js"),
       devTools: isDev,
       contextIsolation: true,
     },
@@ -126,32 +121,102 @@ function createWindow() {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools({ mode: "detach" });
+
+  mainWindow.on("close", (e) => {
+    e.preventDefault();
+    dialog
+      .showMessageBox(mainWindow, {
+        type: "question",
+        buttons: ["Yes", "No"],
+        title: "Confirm",
+        defaultId: 2,
+        message: "Sicuro di voler uscire? Perderai tutti i dati",
+      })
+      .then((response) => {
+        if (response.response == 0) {
+          console.log("response === 0");
+          mainWindow.destroy();
+          app.quit();
+        }
+      });
+  });
 }
 
+const testget = async () => {
+  try {
+    let res = await fetch("http://localhost:3990/api/");
 
+    if (!res.error) {
+      console.log(res.data);
+    }
+  } catch (error) {
+    console.log("error : ", error.message);
+  }
+};
+
+const testredirect = async () => {
+  try {
+    let res = await axios.get("http://localhost:3990/api/loginToADFS");
+
+    if (!res.error) {
+      console.log(res.headers.location);
+      let redirectWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        minWidth: 600,
+        minHeight: 600,
+      });
+
+      redirectWindow.loadURL(res.headers.location);
+      redirectWindow.loadFile(res.headers.location);
+
+      redirectWindow.show();
+    }
+  } catch (error) {
+    console.log("error : ", error.message);
+  }
+};
 
 app.on("ready", () => {
   createWindow();
+  // testget();
+  // testredirect();
 
-  startKL();
-  // // express_app.use(express.json())
-  // // express_app.use(express.urlencoded({extended:false}))
+  const endpoint = new URL("http://localhost:3990/api/callAuthMain");
+  endpoint.searchParams.set("APP_KEY", "u54983ds9");
 
-  // // express_app.post("/test", (req, res) => {
-  // //   const {name,user} = req.body
-  // //   console.log(`sono dentro la get e ti sto mandando dei dati: name ${name} user ${user} `);
-  // //   mainWindow.webContents.send("incomingData", {
-  // //     message: "ti ho inviato dei dati dal main",
-  // //   });
+  AsyncMethods.getAsync(endpoint)
+    .then((data) => {
+      // console.log('data retrieved from callAuthMain', data);
+      const { ADFS_URL } = data;
 
-  
-  // //   res.status(200).json({ message: "Dentro la get del server" });
-  // // });
+      let redirectWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        minWidth: 600,
+        minHeight: 600,
+      });
 
-  // // express_app.listen(5500, () => console.log("Server started on port 5500"));
+      redirectWindow.loadURL(ADFS_URL);
+      // redirectWindow.loadFile(res.headers.location);
+
+      redirectWindow.show();
+
+    })
+    .catch((error) => console.error("error catched in main.js", error));
+
+  // startKL();
+  express_app.use(express.json())
+  express_app.use(express.urlencoded({extended:false}))
+
+  express_app.get("/token", (req, res) => {
+   const headers = req.headers
+   console.log('headers',headers);
+    res.status(200).json({ message: `Dentro la get del server headers =` });
+  });
+
+  express_app.listen(5600, () => console.log("Server started on port 5500"));
 });
-
-
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
@@ -189,8 +254,20 @@ ipcMain.on("registerClient", (event, data) => {
   registerClient();
 });
 
-ipcMain.handle("greet_main", (event, args) => {
-  return "ciao sono il main";
+ipcMain.on("loadTest", () => {
+  console.log("Load Test inside electron handler...");
+  // console.log(args);
+  // const payload = {datacart : 'datacart from ipc-electron-react'}
+
+  let datacart_mock = fs.readFileSync(
+    path.join(__dirname, "/mock/generate.json")
+  );
+
+  const payload = { datacart: JSON.parse(datacart_mock) };
+  sendDataCart(
+    "I'm trying to send the load test dataCart through axios...",
+    payload
+  );
 });
 
 const startKL = () => {
@@ -363,11 +440,11 @@ const registerClient = async () => {
       throw new Error("Invalid response");
     }
     let data = res.data;
-    console.log('data ', data)
+    console.log("data ", data);
     let consoleMessage = "I got register response --> " + data.message;
     mainWindow.webContents.send("consoleMessages", consoleMessage);
   } catch (error) {
-    console.log('error in registerclient call : '+ error.message);
+    console.log("error in registerclient call : " + error.message);
     mainWindow.webContents.send(
       "consoleMessages",
       "Error while registering the client --> " + error.message
@@ -388,13 +465,15 @@ const sendDataCart = async (message, payload) => {
     let consoleMessage = "I got sendDataCart response -->" + data.message;
     mainWindow.webContents.send("consoleMessages", consoleMessage);
   } catch (error) {
-    console.log('error in sendatacart call : '+ error.message);
+    console.log("error in sendatacart call : " + error.message);
     mainWindow.webContents.send(
       "consoleMessages",
       "Error while sending the dataCart --> " + error.message
     );
   }
 };
+
+const loadTest = () => {};
 
 async function doPostRequest(endpoint, payload) {
   try {

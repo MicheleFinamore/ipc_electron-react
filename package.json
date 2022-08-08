@@ -10,10 +10,12 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "chokidar": "^3.5.3",
+    "electron-fetch": "^1.7.4",
     "electron-is-dev": "^2.0.0",
+    "electron-updater": "^5.2.1",
     "express": "^4.18.1",
     "is-reachable": "^5.2.1",
-    "node-fetch": "^3.2.7",
+    "node-fetch": "^3.2.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -29,7 +31,8 @@
     "electron:dev": "electron .",
     "build-electron": "react-scripts build",
     "electron:build": "yarn build-electron && electron-builder build --publish never",
-    "start:server": "nodemon ../backend/express.js"
+    "start:server": "nodemon ../backend/express.js",
+    "start:generate": "node electron/generate.js"
   },
   "homepage": "./",
   "build": {

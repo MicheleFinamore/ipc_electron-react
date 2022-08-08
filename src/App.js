@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState, useEffect, useCallback } from "react";
 import ConsoleItem from "./components/console/ConsoleItem";
-import CustomButton from "./components/Ui/CustomButton";
+import CustomButton from "./components/Ui/CustomButton/CustomButton";
+// import CustomInput from "./components/Ui/CustomInput/CustomInput";
 
 function App() {
   const [messages, setMessages] = useState(['Application Started...']);
@@ -16,6 +17,7 @@ function App() {
     [messages]
   );
 
+  // aggancia il listener per i messaggi inviati dal main di electron
   useEffect(() => {
     const removeListener = window.ipc_renderer.receive(
       "consoleMessages",
@@ -44,9 +46,14 @@ function App() {
     // window.ipc_renderer.sendDatacart({ message: "datacart" });
   };
 
-  const testConsole = () => {
+  const testCarico = () => {
 
-    setMessages(prevMessages =>([...prevMessages, 'Test Console']) )
+    // console.log('Inizio test di carico')
+    const currMessages = [...messages];
+    currMessages.push('Inizio test di carico')
+    setMessages(currMessages)
+    window.ipc_renderer.send('loadTest')
+    // setMessages(prevMessages =>([...prevMessages, 'Test Console']) )
   };
 
   return (
@@ -56,7 +63,12 @@ function App() {
           <CustomButton handler={registerClient} text={'Register Client'} />
           <CustomButton handler={testDataCart} text={'Send DataCart'} />
           <CustomButton handler={()=> setMessages([])} text={'Clear Console'} />
-          <CustomButton handler={testConsole} text={'Test Console'} />
+          <CustomButton handler={testCarico} text={'Test Carico'} />
+          {/* <CustomInput />
+          <CustomInput />
+          <CustomInput />
+          <CustomInput /> */}
+          
         </div>
         <div className="log-container">
           {messages.map((elem, index) => {
