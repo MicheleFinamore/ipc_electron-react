@@ -1,4 +1,16 @@
 
+window.addEventListener('DOMContentLoaded', () => {
+
+  if (process.platform !== 'darwin') {
+    const customTitlebar = require('custom-electron-titlebar');
+    new customTitlebar.Titlebar({
+        backgroundColor: customTitlebar.Color.fromHex('#F9AA33')
+    });
+    
+}
+
+  
+});
 
 const { ipcRenderer, contextBridge } = require("electron");
 // console.log("Sto eseguendo preload.js")

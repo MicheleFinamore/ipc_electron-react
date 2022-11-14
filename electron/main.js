@@ -1,10 +1,10 @@
+const {setupTitlebar,attachTitlebarToWindow} = require('custom-electron-titlebar/main')
 const { app, BrowserWindow, dialog } = require("electron");
 const path = require("path");
 const isDev = require("electron-is-dev");
 const express = require("express");
 const { ipcMain } = require("electron/main");
 const express_app = express();
-const tcpPortUsed = require("tcp-port-used");
 const { exec } = require("node:child_process");
 
 const fs = require("fs");
@@ -14,6 +14,7 @@ const chokidar = require("chokidar");
 const AsyncMethods = require("./utils");
 
 let mainWindow = null;
+let redirectWindow = null;
 
 //Initialize watcher for folder
 const watcher = chokidar.watch(
@@ -22,6 +23,9 @@ const watcher = chokidar.watch(
     persistent: true,
   }
 );
+
+// setup the titlebar main process
+setupTitlebar();
 
 watcher
   .on("add", (path) => {
@@ -99,14 +103,16 @@ watcher
 // crea la window electron
 function createWindow() {
   const startUrl = isDev
-    ? "http://localhost:3001"
+    ? "http://localhost:3010"
     : `file://${path.join(__dirname, "../build/index.html")}`;
 
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     minWidth: 600,
+    titleBarStyle: 'hidden',
     minHeight: 600,
+    show: false,
     webPreferences: {
       // nodeIntegration: true,
       preload: path.join(__dirname, "preload.js"),
@@ -117,10 +123,13 @@ function createWindow() {
 
   mainWindow.loadURL(startUrl);
 
-  mainWindow.show();
+  // mainWindow.show();
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools({ mode: "detach" });
+
+  // attach fullscreen(f11 and not 'maximized') && focus listeners
+  attachTitlebarToWindow(mainWindow);
 
   mainWindow.on("close", (e) => {
     e.preventDefault();
@@ -190,7 +199,7 @@ app.on("ready", () => {
       // console.log('data retrieved from callAuthMain', data);
       const { ADFS_URL } = data;
 
-      let redirectWindow = new BrowserWindow({
+     redirectWindow = new BrowserWindow({
         width: 800,
         height: 600,
         minWidth: 600,
@@ -206,16 +215,28 @@ app.on("ready", () => {
     .catch((error) => console.error("error catched in main.js", error));
 
   // startKL();
-  express_app.use(express.json())
-  express_app.use(express.urlencoded({extended:false}))
+  express_app.use(express.json());
+  express_app.use(express.urlencoded({ extended: false }));
 
   express_app.get("/token", (req, res) => {
-   const headers = req.headers
-   console.log('headers',headers);
-    res.status(200).json({ message: `Dentro la get del server headers =` });
+   const {token} = req.query
+   console.log('token',token);
+    res.status(200).send("<html> <head>server Response</head><body><h1> Login OK</p></h1></body></html>");
+
+    setTimeout(() => {
+      AsyncMethods.postAsync('http://localhost:3990/api/smartAntAuthentication', {token :token}).then(resp => {
+        redirectWindow.close()
+        mainWindow.show()
+        mainWindow.webContents.send(
+          "consoleMessages",
+          `I got the token : ${resp.token}`
+        );
+
+      })
+    },3000)
   });
 
-  express_app.listen(5600, () => console.log("Server started on port 5500"));
+  express_app.listen(5600, () => console.log("Server started on port 5600"));
 });
 
 app.on("window-all-closed", () => {
@@ -239,7 +260,7 @@ ipcMain.on("sendDataCart", (event, args) => {
   // const payload = {datacart : 'datacart from ipc-electron-react'}
 
   let datacart_mock = fs.readFileSync(
-    path.join(__dirname, "/mock/datacart_mock.json")
+    path.join(__dirname, "/mock/tetras_datacart.json")
   );
 
   const payload = { datacart: JSON.parse(datacart_mock) };
@@ -346,7 +367,7 @@ const startKL = () => {
   //   }
   // });
   try {
-    waitPortListening(5500, registerClient);
+    AsyncMethods.waitPortListening(5500, registerClient);
   } catch (error) {
     console.error("Error inside startkl ", error);
   }
@@ -378,45 +399,15 @@ const startKL = () => {
   // );
 };
 
-const waitPortListening = (port, callback) => {
-  tcpPortUsed.waitUntilUsed(port, 500, 1800000).then(
-    () => {
-      console.log(
-        "Port 5500 is now listening... I'm sending the register request"
-      );
-      console.log("Get DMX ...");
-      callback();
-
-      // let datamodel_conf_raw = fs.readFileSync(
-      //   path.join(__dirname, "/mock/custom_datamodel.json")
-      // );
-      // const pack = {
-      //   dmx: JSON.parse(datamodel_conf_raw),
-      //   type: "REGISTER",
-      //   // dmx: datamodel_conf_raw,
-      // };
-      // console.log("Parsed DMX ...");
-      // console.log(pack);
-      // console.log("Sending the request...");
-
-      // doPostRequest("http://localhost:5500/register", pack);
-    },
-    (err) => {
-      console.error("Error on waitUntilused:", err.message);
-      throw new Error(`Error in waitingUntilUse : ${err.message}`);
-    }
-  );
-};
-
 const registerClient = async () => {
   console.log("Inside register client function");
 
   let datamodel_conf_raw = fs.readFileSync(
-    path.join(__dirname, "/mock/custom_datamodel.json")
+    path.join(__dirname, "/mock/TetrasDataModel.json")
   );
 
   let action_conf_raw = fs.readFileSync(
-    path.join(__dirname, "/mock/my_actionconf.json")
+    path.join(__dirname, "/mock/ActionConfTetras.json")
   );
 
   const pack = {

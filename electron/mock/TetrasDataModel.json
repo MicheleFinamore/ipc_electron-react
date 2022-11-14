@@ -1,0 +1,3028 @@
+{
+    "SemTypecatalog": null,
+    "Styles": [],
+    "Entities": [
+        {
+            "DisplayName": "PHONE_phone",
+            "MetaType": "guidE86D9A14-7031-49ED-967D-ACEA667E446D",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "PhoneNumber",
+                    "DisplayName": "PHONE_PHONENUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "WebAddress",
+                    "DisplayName": "PHONE_WEBADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B"
+                },
+                {
+                    "Name": "EmailAddress",
+                    "DisplayName": "PHONE_EMAILADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD"
+                },
+                {
+                    "Name": "MNPOccurrences",
+                    "DisplayName": "PHONE_MNPOCCURRENCES",
+                    "DataType": 4,
+                    "MetaType": "guid89AB571C-1ED2-43DE-A2ED-184455D518C3"
+                },
+                {
+                    "Name": "CurrentMobilePhoneOperator",
+                    "DisplayName": "PHONE.CURRENTMOBILEPHONEOPERATOR",
+                    "DataType": 4,
+                    "MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C"
+                }
+            ],
+            "Name": "PhoneNumber",
+            "IconName": "Phone",
+            "IconUri": "VLImages/gifs/Phone.gif"
+        },
+        {
+            "DisplayName": "SUBSC_SUBSCINFO",
+            "MetaType": "guid8863CA12-D42B-4b07-8E96-5509EF979920",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "PhoneNumber",
+                    "DisplayName": "SUBSC_PHONENUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "WebAddress",
+                    "DisplayName": "SUBSC_WEBADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B"
+                },
+                {
+                    "Name": "EmailAddress",
+                    "DisplayName": "SUBSC_EMAILADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD"
+                }
+            ],
+            "Name": "SubscriberInfo",
+            "IconName": "Person",
+            "IconUri": "VLImages/gifs/Person.gif"
+        },
+        {
+            "DisplayName": "SUBSCREC_ORGANIZATION",
+            "MetaType": "guidB30A4137-A537-420B-B481-C5DF922152AF",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Subsc",
+                    "DisplayName": "SUBSCREC_ORGANIZATION_SUBSC",
+                    "DataType": 4,
+                    "MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C"
+                },
+                {
+                    "Name": "Address",
+                    "DisplayName": "SUBSCREC_ADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                },
+                {
+                    "Name": "City",
+                    "DisplayName": "SUBSCREC_CITY",
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "Zip",
+                    "DisplayName": "SUBSCREC_ZIP",
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "State",
+                    "DisplayName": "SUBSCREC_STATE",
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": "SUBSCREC_COUNTRY",
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "BirthDate",
+                    "DisplayName": "SUBSCREC_BIRTHDATE",
+                    "DataType": 4,
+                    "MetaType": "guidFE45F1C4-B198-4111-8123-F42D2CD6419D"
+                },
+                {
+                    "Name": "TaxId",
+                    "DisplayName": "SUBSCREC_TAXID",
+                    "DataType": 4,
+                    "MetaType": "guidFE28AF88-47F8-40E9-A6A5-F0FE56A3518E"
+                },
+                {
+                    "Name": "VatNumber",
+                    "DisplayName": "SUBSCREC_VATNUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid134D7DC2-C655-40EE-B5CB-B3847FFDDAEB"
+                },
+                {
+                    "Name": "Number",
+                    "DisplayName": "SUBSCREC_NUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "Email",
+                    "DisplayName": "SUBSCREC_EMAIL",
+                    "DataType": 4,
+                    "MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD"
+                },
+                {
+                    "Name": "Imei",
+                    "DisplayName": "SUBSCREC_IMEI",
+                    "DataType": 4,
+                    "MetaType": "guid5CBD40E7-9EB8-48F1-B305-FB1F0DB1AA00"
+                },
+                {
+                    "Name": "Imsi",
+                    "DisplayName": "SUBSCREC_IMSI",
+                    "DataType": 4,
+                    "MetaType": "guidC849BEC0-BCF7-4A64-B7C4-8ED334EB9D71"
+                },
+                {
+                    "Name": "ActDate",
+                    "DisplayName": "SUBSCREC_ACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guidB8767EA5-841F-4734-B703-BC58786296A3"
+                },
+                {
+                    "Name": "DeactDate",
+                    "DisplayName": "SUBSCREC_DEACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guid5C9AD4B9-1135-4c5a-ABAC-8170C2A14B55"
+                },
+                {
+                    "Name": "Provider",
+                    "DisplayName": "SUBSCREC_PROVIDER",
+                    "DataType": 4,
+                    "MetaType": "guid71F695EB-C76F-4ba7-9536-2E9EBE7EDD88"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Organization_Record",
+            "IconName": "Organ",
+            "IconUri": "VLImages/gifs/Organ.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid27206a86-a8bb-431a-84c2-b1f4b0a7fa10",
+            "Property": [
+                {
+                    "Name": "id",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid9288330D-A04E-410A-A1AA-03FC76D01DAE"
+                },
+                {
+                    "Name": "AccountName",
+                    "DisplayName": "Nome",
+                    "DataType": 4,
+                    "MetaType": "guid22340EB0-01BB-4263-928E-FC971ACB3C51"
+                },
+                {
+                    "Name": "AccountType",
+                    "DisplayName": "Tipo",
+                    "DataType": 4,
+                    "MetaType": "guid0FA4C573-0436-4360-AEA7-F123F1994B8E"
+                },
+                {
+                    "Name": "CaseId",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid775b8aac-60bd-470c-a61a-a792c9fac1ed"
+                },
+                {
+                    "Name": "FacebookId",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid31ED2A6C-27DB-49DC-AAB9-B90B4D3BB155"
+                }
+            ],
+            "Name": "AccountProfile",
+            "IconName": "Facebook",
+            "IconUri": "VLImages/gifs/new/Account.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guidE0C7AD7F-2F94-45E8-8E33-DC4B30131DEA",
+            "Property": [
+                {
+                    "Name": "id",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid9288330D-A04E-410A-A1AA-03FC76D01DAE"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": "Country",
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                }
+            ],
+            "Name": "Provider",
+            "IconName": "Provider",
+            "IconUri": "VLImages/gifs/new/Account.png"
+        },
+        {
+            "DisplayName": "SUBSCREC_PERSON",
+            "MetaType": "guid8A586959-9837-47DE-8DBF-BC7031F01545",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Name",
+                    "DisplayName": "SUBSCREC_NAME",
+                    "DataType": 4,
+                    "MetaType": "guid4DE7370B-60E5-4EB0-860E-4066D3DFD7B6"
+                },
+                {
+                    "Name": "LastName",
+                    "DisplayName": "SUBSCREC_LASTNAME",
+                    "DataType": 4,
+                    "MetaType": "guid62B01C18-2E64-46D5-B2FF-3C69B4F76FEB"
+                },
+                {
+                    "Name": "Subsc",
+                    "DisplayName": "SUBSCREC_SUBSC",
+                    "DataType": 4,
+                    "MetaType": "guidB696CF9C-BF3C-4311-954F-DD809CEB38CC"
+                },
+                {
+                    "Name": "Address",
+                    "DisplayName": "SUBSCREC_ADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                },
+                {
+                    "Name": "City",
+                    "DisplayName": "SUBSCREC_CITY",
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "Zip",
+                    "DisplayName": "SUBSCREC_ZIP",
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "State",
+                    "DisplayName": "SUBSCREC_STATE",
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": "SUBSCREC_COUNTRY",
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "Gender",
+                    "DisplayName": "SUBSCREC_GENDER",
+                    "DataType": 4,
+                    "MetaType": "guid7548369B-BA9A-4C4B-AEAD-0CB442EAFA27"
+                },
+                {
+                    "Name": "BirthDate",
+                    "DisplayName": "SUBSCREC_BIRTHDATE",
+                    "DataType": 4,
+                    "MetaType": "guidFE45F1C4-B198-4111-8123-F42D2CD6419D"
+                },
+                {
+                    "Name": "BirthPlace",
+                    "DisplayName": "SUBSCREC_BIRTHPLACE",
+                    "DataType": 4,
+                    "MetaType": "guid862F1A2E-DD61-482B-808A-65FD492484A6"
+                },
+                {
+                    "Name": "TaxId",
+                    "DisplayName": "SUBSCREC_TAXID",
+                    "DataType": 4,
+                    "MetaType": "guidFE28AF88-47F8-40E9-A6A5-F0FE56A3518E"
+                },
+                {
+                    "Name": "VatNumber",
+                    "DisplayName": "SUBSCREC_VATNUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid134D7DC2-C655-40EE-B5CB-B3847FFDDAEB"
+                },
+                {
+                    "Name": "Number",
+                    "DisplayName": "SUBSCREC_NUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "Email",
+                    "DisplayName": "SUBSCREC_EMAIL",
+                    "DataType": 4,
+                    "MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD"
+                },
+                {
+                    "Name": "Imei",
+                    "DisplayName": "SUBSCREC_IMEI",
+                    "DataType": 4,
+                    "MetaType": "guid5CBD40E7-9EB8-48F1-B305-FB1F0DB1AA00"
+                },
+                {
+                    "Name": "Imsi",
+                    "DisplayName": "SUBSCREC_IMSI",
+                    "DataType": 4,
+                    "MetaType": "guidC849BEC0-BCF7-4A64-B7C4-8ED334EB9D71"
+                },
+                {
+                    "Name": "ActDate",
+                    "DisplayName": "SUBSCREC_ACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guidB8767EA5-841F-4734-B703-BC58786296A3"
+                },
+                {
+                    "Name": "DeactDate",
+                    "DisplayName": "SUBSCREC_DEACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guid5C9AD4B9-1135-4c5a-ABAC-8170C2A14B55"
+                },
+                {
+                    "Name": "Provider",
+                    "DisplayName": "SUBSCREC_PROVIDER",
+                    "DataType": 4,
+                    "MetaType": "guid71F695EB-C76F-4ba7-9536-2E9EBE7EDD88"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Person_Record",
+            "IconName": "Person",
+            "IconUri": "VLImages/gifs/Person.gif"
+        },
+        {
+            "DisplayName": "IMEI",
+            "MetaType": "guidD5FBD9D5-45CE-4790-A7A4-E9EA00AEFBFE",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "IMEI",
+                    "DisplayName": "IMEI",
+                    "DataType": 4,
+                    "MetaType": "guid5CBD40E7-9EB8-48F1-B305-FB1F0DB1AA00"
+                },
+                {
+                    "Name": "Marca",
+                    "DisplayName": "IMEI_BRAND",
+                    "DataType": 4,
+                    "MetaType": "guidED8D3576-CB65-4dd5-BDF6-E3DF5A9B1FC7"
+                },
+                {
+                    "Name": "Modello",
+                    "DisplayName": "IMEI_MODEL",
+                    "DataType": 4,
+                    "MetaType": "guidC4710BC4-4556-4b6f-AD64-1EBF73044B41"
+                },
+                {
+                    "Name": "Banda",
+                    "DisplayName": "IMEI_BAND",
+                    "DataType": 4,
+                    "MetaType": "guidCBA4EF12-3D25-4d82-9DDE-01C5B4ED9ED0"
+                },
+                {
+                    "Name": "Wifi",
+                    "DisplayName": "WIFI",
+                    "DataType": 4,
+                    "MetaType": "guid77569ACF-AF00-4F9F-A4AA-94C5C0641EFA"
+                }
+            ],
+            "Name": "Imei",
+            "IconName": "Cellfone",
+            "IconUri": "VLImages/gifs/Cellfone.gif"
+        },
+        {
+            "DisplayName": "IMSI",
+            "MetaType": "guid4BDFC38F-0617-4554-98B3-CF572A77191C",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "IMSI",
+                    "DisplayName": "IMSI",
+                    "DataType": 4,
+                    "MetaType": "guidC849BEC0-BCF7-4A64-B7C4-8ED334EB9D71"
+                },
+                {
+                    "Name": "MCCMNCtuple",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85986F8D-9044-44B3-BE24-0AAB044224D0"
+                },
+                {
+                    "Name": "MobilePhoneOperator",
+                    "DisplayName": "IMSI_MOBILEPHONEOPERATOR",
+                    "DataType": 4,
+                    "MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C"
+                }
+            ],
+            "Name": "Imsi",
+            "IconName": "SIM Card",
+            "IconUri": "VLImages/gifs/SIM Card.gif"
+        },
+        {
+            "DisplayName": "PHONECARD",
+            "MetaType": "guid076DDDC0-82C0-4449-A80A-BE6D048E8D77",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "CardID",
+                    "DisplayName": "PHONECARD_CARDID",
+                    "DataType": 4,
+                    "MetaType": "guid5ED1436F-30AE-434F-8EFC-9AD20658565A"
+                }
+            ],
+            "Name": "PhoneCard",
+            "IconName": "PhoneCard1",
+            "IconUri": "VLImages/gifs/Payphone.gif"
+        },
+        {
+            "DisplayName": "CELL_CELL",
+            "MetaType": "guid3BA45F9E-1E18-4494-ACC6-E0FCD8715345",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "CGI",
+                    "DisplayName": "CELL_CGI",
+                    "DataType": 4,
+                    "MetaType": "guidCE8FFF55-BC3A-4EBF-97FD-BCE176BD5611"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": "CELL_COUNTRY",
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "Provider",
+                    "DisplayName": "CELL_PROVIDER",
+                    "DataType": 4,
+                    "MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C"
+                }
+            ],
+            "Name": "Cell",
+            "IconName": "PyrSilver",
+            "IconUri": "VLImages/gifs/PyrSilver.gif"
+        },
+        {
+            "DisplayName": "CELLGIS_CELLGIS",
+            "MetaType": "guid3BA45F9E-1E18-4494-ACC6-E0FCD8715345",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "CGI",
+                    "DisplayName": "CELLGIS_CGI",
+                    "DataType": 4,
+                    "MetaType": "guidCE8FFF55-BC3A-4EBF-97FD-BCE176BD5611"
+                },
+                {
+                    "Name": "Caseid",
+                    "DisplayName": "CELLGIS_CASEID",
+                    "DataType": 4,
+                    "MetaType": "guid775b8aac-60bd-470c-a61a-a792c9fac1ed"
+                },
+                {
+                    "Name": "StartDate",
+                    "DisplayName": "CELLGIS_ACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guidB8767EA5-841F-4734-B703-BC58786296A3"
+                },
+                {
+                    "Name": "EndDate",
+                    "DisplayName": "CELLGIS_DEACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guid5C9AD4B9-1135-4c5a-ABAC-8170C2A14B55"
+                },
+                {
+                    "Name": "Address",
+                    "DisplayName": "CELLGIS_ADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                },
+                {
+                    "Name": "City",
+                    "DisplayName": "CELLGIS_CITY",
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "State",
+                    "DisplayName": "CELLGIS_STATE",
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Zip",
+                    "DisplayName": "CELLGIS_ZIP",
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": "CELLGIS_COUNTRY",
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "Iso3166Alpha",
+                    "DisplayName": "CELLGIS_ISO3166ALPHA",
+                    "DataType": 4,
+                    "MetaType": "guid040FF1BA-5EE3-4AE1-9C0F-C7831A0B4553"
+                },
+                {
+                    "Name": "Latitude",
+                    "DisplayName": "CELLGIS_LATITUDE",
+                    "DataType": 4,
+                    "MetaType": "guid5304A03B-FE47-4406-91E7-0D49EC8409A6"
+                },
+                {
+                    "Name": "Longitude",
+                    "DisplayName": "CELLGIS_LONGITUDE",
+                    "DataType": 4,
+                    "MetaType": "guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9"
+                },
+                {
+                    "Name": "Provider",
+                    "DisplayName": "CELLGIS_PROVIDER",
+                    "DataType": 4,
+                    "MetaType": "guid71F695EB-C76F-4ba7-9536-2E9EBE7EDD88"
+                },
+                {
+                    "Name": "Description",
+                    "DisplayName": "CELLGIS_DESCRIPTION",
+                    "DataType": 4,
+                    "MetaType": "guid359AD9EB-8AC2-4c0d-82E6-AA77734CC423"
+                }
+            ],
+            "Name": "CellGIS",
+            "IconName": "PyrWhite",
+            "IconUri": "VLImages/gifs/PyrWhite.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid25B2ED0F-8440-48BC-8691-519318F1FD79",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                }
+            ],
+            "Name": "CaseCell_Style",
+            "IconName": "pyrblue",
+            "IconUri": "VLImages/gifs/pyrblue.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid99C1F9AC-5AAE-436E-BA52-13910CD5D1D5",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                }
+            ],
+            "Name": "GlobalCell_Style",
+            "IconName": "PyrRed",
+            "IconUri": "VLImages/gifs/PyrRed.gif"
+        },
+        {
+            "DisplayName": "PUBPHONE_PUBPHONE",
+            "MetaType": "guid363CC62B-CEFD-4568-BF80-324D9D47AB7C",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Number",
+                    "DisplayName": "PUBPHONE_NUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": "PUBPHONE_COUNTRY",
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "City",
+                    "DisplayName": "PUBPHONE_CITY",
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "Zip",
+                    "DisplayName": "PUBPHONE_ZIP",
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "State",
+                    "DisplayName": "PUBPHONE_STATE",
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Lat",
+                    "DisplayName": "PUBPHONE_LATITUDE",
+                    "DataType": 4,
+                    "MetaType": "guid5304A03B-FE47-4406-91E7-0D49EC8409A6"
+                },
+                {
+                    "Name": "Lng",
+                    "DisplayName": "PUBPHONE_LONGITUDE",
+                    "DataType": 4,
+                    "MetaType": "guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9"
+                },
+                {
+                    "Name": "Address",
+                    "DisplayName": "PUBPHONE_ADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                }
+            ],
+            "Name": "PublicPhone",
+            "IconName": "phonebox",
+            "IconUri": "VLImages/gifs/new/phonebox.png"
+        },
+        {
+            "DisplayName": "PUBPHONEGIS_PUBPHONEGIS",
+            "MetaType": "guid363CC62B-CEFD-4568-BF80-324D9D47AB7C",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Number",
+                    "DisplayName": "PUBPHONEGS_NUMBER",
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "CaseId",
+                    "DisplayName": "PUBPHONEGIS_CASEID",
+                    "DataType": 4,
+                    "MetaType": "guid775b8aac-60bd-470c-a61a-a792c9fac1ed"
+                },
+                {
+                    "Name": "ActDate",
+                    "DisplayName": "PUBPHONEGIS_ACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guidB8767EA5-841F-4734-B703-BC58786296A3"
+                },
+                {
+                    "Name": "DeactDate",
+                    "DisplayName": "PUBPHONEGIS_DEACTDATE",
+                    "DataType": 4,
+                    "MetaType": "guid5C9AD4B9-1135-4c5a-ABAC-8170C2A14B55"
+                },
+                {
+                    "Name": "Address",
+                    "DisplayName": "PUBPHONEGIS_ADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                },
+                {
+                    "Name": "City",
+                    "DisplayName": "PUBPHONEGIS_CITY",
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "State",
+                    "DisplayName": "PUBPHONEGIS_STATE",
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Zip",
+                    "DisplayName": "PUBPHONEGIS_ZIP",
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": "PUBPHONEGIS_COUNTRY",
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "Lat",
+                    "DisplayName": "PUBPHONEGIS_LATITUDE",
+                    "DataType": 4,
+                    "MetaType": "guid5304A03B-FE47-4406-91E7-0D49EC8409A6"
+                },
+                {
+                    "Name": "Lng",
+                    "DisplayName": "PUBPHONEGIS_LONGITUDE",
+                    "DataType": 4,
+                    "MetaType": "guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9"
+                },
+                {
+                    "Name": "Platform",
+                    "DisplayName": "PUBPHONEGIS_PLATFORM",
+                    "DataType": 4,
+                    "MetaType": "guid71F695EB-C76F-4ba7-9536-2E9EBE7EDD88"
+                },
+                {
+                    "Name": "Description",
+                    "DisplayName": "PUBPHONEGIS_DESCIPRTION",
+                    "DataType": 4,
+                    "MetaType": "guid359AD9EB-8AC2-4c0d-82E6-AA77734CC423"
+                }
+            ],
+            "Name": "PublicPhoneGIS",
+            "IconName": "Phone",
+            "IconUri": "VLImages/gifs/Phone.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guidAC28C6FF-6780-49DA-8D8B-252CD3E6C141",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "PhoneNumber",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "City",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "ZipCode",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "State",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Latitude",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid5304A03B-FE47-4406-91E7-0D49EC8409A6"
+                },
+                {
+                    "Name": "Longitude",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9"
+                },
+                {
+                    "Name": "StreetName",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                },
+                {
+                    "Name": "Subkey",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid501E8066-DC6E-4877-849F-B5B2DEF9D172"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "CasePublicPhone_Style",
+            "IconName": "CabinaIndagine",
+            "IconUri": "VLImages/gifs/General.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guidCB1B9F4C-B14D-4F3A-AB16-9FA164035D0E",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "PhoneNumber",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "City",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "ZipCode",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "State",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Latitude",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid5304A03B-FE47-4406-91E7-0D49EC8409A6"
+                },
+                {
+                    "Name": "Longitude",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9"
+                },
+                {
+                    "Name": "StreetName",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                },
+                {
+                    "Name": "Subkey",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid501E8066-DC6E-4877-849F-B5B2DEF9D172"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "GlobalPublicPhone_Style",
+            "IconName": "CabinaGlobale",
+            "IconUri": "VLImages/gifs/General.gif"
+        },
+        {
+            "DisplayName": "DEALER_DEALER",
+            "MetaType": "guidDB8328BF-3AC1-42A9-B09D-51F4FC93DC42",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Dealer",
+                    "DisplayName": "DEALER_DEALERNAME",
+                    "DataType": 4,
+                    "MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C"
+                },
+                {
+                    "Name": "DealerTaxId",
+                    "DisplayName": "DEALER_DEALERTAXID",
+                    "DataType": 4,
+                    "MetaType": "guid134D7DC2-C655-40EE-B5CB-B3847FFDDAEB"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Dealer",
+            "IconName": "Profmale",
+            "IconUri": "VLImages/gifs/Profmale.gif"
+        },
+        {
+            "DisplayName": "SIMPLELIST",
+            "MetaType": "guidD2636AB3-FF34-4D79-93BD-1DE432E9CF62",
+            "Property": [
+                {
+                    "Name": "ListGUID",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "SimpleList",
+            "IconName": "Document",
+            "IconUri": "VLImages/gifs/Document.gif"
+        },
+        {
+            "DisplayName": "CDRSET",
+            "MetaType": "guid4FEFCA4D-8D4A-41DE-877E-7D95A76666E7",
+            "Property": [
+                {
+                    "Name": "ListGUID",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "CDRSet",
+            "IconName": "Srvlanc1",
+            "IconUri": "VLImages/gifs/Srvlanc1.gif"
+        },
+        {
+            "DisplayName": "SOURCE",
+            "MetaType": "guid3FF99984-6D1C-4265-866D-4980DC756E26",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "SourceDescription",
+                    "DisplayName": "SOURCE_SOURCEDESCRIPTION",
+                    "DataType": 4,
+                    "MetaType": "guid25EAFCAA-E2EB-432d-8927-A59CF0B84CDA"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Source",
+            "IconName": "Document",
+            "IconUri": "VLImages/gifs/Document.gif"
+        },
+        {
+            "DisplayName": "TETRASCASE_TETRASCASE",
+            "MetaType": "guid6C7D9311-D676-47cb-9546-68A34BADB498",
+            "Property": [
+                {
+                    "Name": "CaseID",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Name",
+                    "DisplayName": "TETRASCASE_NAME",
+                    "DataType": 4,
+                    "MetaType": "guidC4710BC4-4556-4b6f-AD64-1EBF73044B41"
+                },
+                {
+                    "Name": "Description",
+                    "DisplayName": "TETRASCASE_DESCRIPTION",
+                    "DataType": 4,
+                    "MetaType": "guid359AD9EB-8AC2-4c0d-82E6-AA77734CC423"
+                },
+                {
+                    "Name": "StartDate",
+                    "DisplayName": "TETRASCASE_STARTDATE",
+                    "DataType": 4,
+                    "MetaType": "guid9B359855-D9C4-468f-81A2-9DB9C87D32EE"
+                },
+                {
+                    "Name": "EndDate",
+                    "DisplayName": "TETRASCASE_ENDDATE",
+                    "DataType": 4,
+                    "MetaType": "guid80860455-202C-4ddf-85A9-AE576D66BD56"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "TetrasCase",
+            "IconName": "Cabinet",
+            "IconUri": "VLImages/gifs/Cabinet.gif"
+        },
+        {
+            "DisplayName": "DATAIMPORT_DATAIMPORT",
+            "MetaType": "guid4B05237D-CAA6-4356-9349-325EB2EFB2F2",
+            "Property": [
+                {
+                    "Name": "ImportID",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "CaseId",
+                    "DisplayName": "DATAIMPORT_CASEID",
+                    "DataType": 4,
+                    "MetaType": "guid3DB01419-6A49-4C46-8CB3-5F8EAA618870"
+                },
+                {
+                    "Name": "SubcaseId",
+                    "DisplayName": "DATAIMPORT_SUBCASEID",
+                    "DataType": 4,
+                    "MetaType": "guidCB0EAB0E-4786-47E7-A6C0-2CBEE25B3AA5"
+                },
+                {
+                    "Name": "FileName",
+                    "DisplayName": "DATAIMPORT_FILENAME",
+                    "DataType": 4,
+                    "MetaType": "guidC4710BC4-4556-4b6f-AD64-1EBF73044B41"
+                },
+                {
+                    "Name": "DataTypeId",
+                    "DisplayName": "DATAIMPORT_DATATYPEID",
+                    "DataType": 4,
+                    "MetaType": "guidc329f90d-3bf7-40c3-8d87-f6fe3cb8d5d4"
+                },
+                {
+                    "Name": "ImportDate",
+                    "DisplayName": "DATAIMPORT_IMPORTDATE",
+                    "DataType": 4,
+                    "MetaType": "guidF49AD106-BBCA-4de0-A6C8-77BCE1493AFA"
+                },
+                {
+                    "Name": "Count",
+                    "DisplayName": "DATAIMPORT_COUNT",
+                    "DataType": 4,
+                    "MetaType": "guid8BACDBBD-0DCC-4272-82E8-987507CAF643"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "DataImport",
+            "IconName": "cdr-list",
+            "IconUri": "VLImages/gifs/new/document.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid3669EC21-8E41-438A-AA1A-26B477C15BE0",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "NumCabina",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid6D46ED63-C752-412F-92C9-032CCBB5CDE8"
+                },
+                {
+                    "Name": "Indagine",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid3DB01419-6A49-4C46-8CB3-5F8EAA618870"
+                },
+                {
+                    "Name": "IndirizzoCabina",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidBC83656E-31B3-4822-A3F5-70B36E8CA602"
+                },
+                {
+                    "Name": "AutoCall",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid4C843605-B54C-4CDD-A7F8-54DF97EC44D8"
+                },
+                {
+                    "Name": "ListeAppartenenza",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD718480F-E399-462F-86AC-9332C0AEE6B6"
+                },
+                {
+                    "Name": "TipoListaSemplice",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid3C170D03-FD05-4C05-9E7D-96291A151240"
+                },
+                {
+                    "Name": "IsTetrasPhoneNum",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid9E9EB8B8-F197-4343-99B5-85F356B81E53"
+                },
+                {
+                    "Name": "MultiMediaContent",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidEAB532FF-B624-4130-9595-6646EE24AA25"
+                },
+                {
+                    "Name": "SottoIndagine",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidCB0EAB0E-4786-47E7-A6C0-2CBEE25B3AA5"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Entity",
+            "IconName": "General",
+            "IconUri": "VLImages/gifs/General.gif"
+        },
+        {
+            "DisplayName": "Invalido",
+            "MetaType": "guid31898DA1-C542-49FE-861E-D45B1EB71F6B",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "BadPhoneNumber_Style",
+            "IconName": "subscrib",
+            "IconUri": "VLImages/gifs/new/subscrib.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guidD181C5E2-18E0-4B10-B6E0-E5F0DCC56CA9",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "PhoneNumberList_Style",
+            "IconName": "phone-list",
+            "IconUri": "VLImages/gifs/Category.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guidDAC48C17-BD51-4D3A-851F-DFC6F73EAC71",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "CellList_Style",
+            "IconName": "cell-list",
+            "IconUri": "VLImages/gifs/Category.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid963912AB-EDF9-41ED-A573-2CD90B604866",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "ImeiList_Style",
+            "IconName": "imei-list",
+            "IconUri": "VLImages/gifs/Category.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guidC3ADB086-D7FC-4E4C-81E2-D9E51F490D51",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "PhoneCardList_Style",
+            "IconName": "pager-list",
+            "IconUri": "VLImages/gifs/Category.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid1B4B5A86-1A54-4426-9240-A387786638F3",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "WebAddress",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Email_Style",
+            "IconName": "WWW",
+            "IconUri": "VLImages/gifs/WWW.gif"
+        },
+        {
+            "DisplayName": "EMAILADDR_EMAILADDR",
+            "MetaType": "guidA0D8A2FE-547D-490E-AF4B-986FE98000DB",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "WebAddress",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B"
+                },
+                {
+                    "Name": "EmailAddress",
+                    "DisplayName": "EMAILADDR.EMAILADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Email Address",
+            "IconName": "Email",
+            "IconUri": "VLImages/gifs/Email.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid211E40F4-26E5-4F6F-BD0C-7DEBD682CE73",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "ImsiList_Style",
+            "IconName": "imsi-list",
+            "IconUri": "VLImages/gifs/Category.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid760A0745-5BA4-43B3-960C-1A425E0BB26A",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "SubscriberInfoSet",
+            "IconName": "persons-list",
+            "IconUri": "VLImages/gifs/General.gif"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid00A0B361-8D62-4E53-9239-65DB98AC345F",
+            "Property": [
+                {
+                    "Name": "CaseID",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Nome",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidC4710BC4-4556-4b6f-AD64-1EBF73044B41"
+                },
+                {
+                    "Name": "Descrizione",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid359AD9EB-8AC2-4c0d-82E6-AA77734CC423"
+                },
+                {
+                    "Name": "IndagineMadre",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid3DB01419-6A49-4C46-8CB3-5F8EAA618870"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "SubCase_Style",
+            "IconName": "Case",
+            "IconUri": "VLImages/gifs/new/Case.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid3746656D-078B-451F-B095-D900A18107EA",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "PublicPhone_Style",
+            "IconName": "phonebox",
+            "IconUri": "VLImages/gifs/new/phonebox.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid92315D47-3BF7-4502-A848-2164E64373D9",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "UNKNOWN_Style",
+            "IconName": "anon",
+            "IconUri": "VLImages/gifs/new/anon.png"
+        },
+        {
+            "DisplayName": "WEBADDR_WEBADDR",
+            "MetaType": "guid45A8FBB7-DA74-4D33-BCD1-110C20E18153",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "WebAddress",
+                    "DisplayName": "WEBADDR_WEBADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B"
+                },
+                {
+                    "Name": "EmailAddress",
+                    "DisplayName": "WEBADDR_EMAILADDRESS",
+                    "DataType": 4,
+                    "MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Web Address",
+            "IconName": "WWW",
+            "IconUri": "VLImages/gifs/new/WWW.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid390BA396-FC4E-42C1-8F03-28D3DFB8D781",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid9288330D-A04E-410A-A1AA-03FC76D01DAE"
+                },
+                {
+                    "Name": "Country",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "IsMarked",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid22D29842-DB65-459e-84D9-7743CEAA8D46"
+                }
+            ],
+            "Name": "DummyIPH",
+            "IconName": "Account",
+            "IconUri": "VLImages/gifs/new/Account.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid6FCF2B7C-AFD7-4832-817F-DA05CA461F55",
+            "Property": [
+                {
+                    "Name": "id",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid9288330D-A04E-410A-A1AA-03FC76D01DAE"
+                }
+            ],
+            "Name": "AccountFacebook",
+            "IconName": "Facebook",
+            "IconUri": "VLImages/gifs/new/Account.png"
+        },
+        {
+            "DisplayName": null,
+            "MetaType": "guid8A586959-9837-47DE-8DBF-BC7031F01545",
+            "Property": [
+                {
+                    "Name": "subkey",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Nome",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid4DE7370B-60E5-4EB0-860E-4066D3DFD7B6"
+                },
+                {
+                    "Name": "Cognome",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid62B01C18-2E64-46D5-B2FF-3C69B4F76FEB"
+                },
+                {
+                    "Name": "Denominazione",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidB696CF9C-BF3C-4311-954F-DD809CEB38CC"
+                },
+                {
+                    "Name": "Indirizzo",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid0CA71FDC-6CAE-4E54-B3A6-E61B5F5F46F9"
+                },
+                {
+                    "Name": "Via",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid2F6B7E57-7626-44DC-9CE5-ECD67DF2157E"
+                },
+                {
+                    "Name": "Citta",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+                },
+                {
+                    "Name": "Cap",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidE88DF247-7CA6-4E4F-B38B-87DDE11EE98C"
+                },
+                {
+                    "Name": "Provincia",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidA29B5F8F-BA18-4262-95BD-65B8216D8841"
+                },
+                {
+                    "Name": "Nazione",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+                },
+                {
+                    "Name": "Sesso",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid7548369B-BA9A-4C4B-AEAD-0CB442EAFA27"
+                },
+                {
+                    "Name": "DataNascita",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidFE45F1C4-B198-4111-8123-F42D2CD6419D"
+                },
+                {
+                    "Name": "LuogoNascita",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid862F1A2E-DD61-482B-808A-65FD492484A6"
+                },
+                {
+                    "Name": "CodiceFiscale",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidFE28AF88-47F8-40E9-A6A5-F0FE56A3518E"
+                },
+                {
+                    "Name": "PartitaIVA",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid134D7DC2-C655-40EE-B5CB-B3847FFDDAEB"
+                },
+                {
+                    "Name": "PhoneNumber",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "WebAddress",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid638AA8A1-B07F-4320-BDBD-91BC5993EA8B"
+                },
+                {
+                    "Name": "EmailAddress",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid7D0DF839-B553-457A-93B4-B333D603B7FD"
+                },
+                {
+                    "Name": "IMEI",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid5CBD40E7-9EB8-48F1-B305-FB1F0DB1AA00"
+                },
+                {
+                    "Name": "IMSI",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidC849BEC0-BCF7-4A64-B7C4-8ED334EB9D71"
+                },
+                {
+                    "Name": "DataAttivazione",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidB8767EA5-841F-4734-B703-BC58786296A3"
+                },
+                {
+                    "Name": "DataDisattivazione",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid5C9AD4B9-1135-4c5a-ABAC-8170C2A14B55"
+                },
+                {
+                    "Name": "Operatore",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid71F695EB-C76F-4ba7-9536-2E9EBE7EDD88"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "PersonaFisica",
+            "IconName": "Person",
+            "IconUri": "VLImages/gifs/Person.gif"
+        }
+    ],
+    "Links": [
+        {
+            "Color": "#000000",
+            "IsSymmetricLink": false,
+            "ShowArrows": true,
+            "DisplayName": null,
+            "MetaType": "guid59AF2273-E052-4d76-82D2-29FDAE535C45",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "Chiamante",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid95F4A288-EDB3-48C8-B5F2-FFB92307F3C2"
+                },
+                {
+                    "Name": "Chiamato",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid0C636498-1777-47A9-AE7B-4C4F5EDC3DC2"
+                },
+                {
+                    "Name": "DataOra",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid75CA7E8F-D2EF-4CF4-BB81-6C244ADA5286"
+                },
+                {
+                    "Name": "CellaInizioFine",
+                    "DisplayName": "Cella Inizio/Fine",
+                    "DataType": 4,
+                    "MetaType": "guidC4710BC4-4556-4b6f-AD64-1EBF73044B41"
+                },
+                {
+                    "Name": "Durata",
+                    "DisplayName": "Durata Chiamata",
+                    "DataType": 2,
+                    "MetaType": "guid601C0497-849D-471b-A7B1-EB033EF874D4"
+                },
+                {
+                    "Name": "Categoria",
+                    "DisplayName": "Categoria Chiamata",
+                    "DataType": 4,
+                    "MetaType": "guid69C60791-00C5-4a7c-AD8D-FD21DF62F249"
+                },
+                {
+                    "Name": "Chiamata",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid91A8A633-41D9-4E64-8663-13F89B38E820"
+                },
+                {
+                    "Name": "Mms",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid27790596-E63E-4246-ADC6-52FEB670CCEC"
+                },
+                {
+                    "Name": "Email",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid01728778-58F4-49C5-909C-9BA55B946CDF"
+                },
+                {
+                    "Name": "Fax",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid5CCFD641-51A2-4957-9295-78A1ECCCFA1D"
+                },
+                {
+                    "Name": "Dati",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guidBE56337C-6E70-4B0B-A496-EAAFD322624A"
+                },
+                {
+                    "Name": "NonRiuscita",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid9D7A05F5-31CE-4211-B477-F44F639804FD"
+                },
+                {
+                    "Name": "VoIP",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid0CC9F607-7BE0-4381-BA9E-6322D4AD2021"
+                },
+                {
+                    "Name": "Videochiamata",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guidAD3DDBC6-A14E-4845-987C-07FB925EE37B"
+                },
+                {
+                    "Name": "Sconosciuta",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guidE353402A-9778-474A-BCC3-07E07A791728"
+                },
+                {
+                    "Name": "Sms",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid36CDBBA6-A9F1-44EC-A72A-F59424E75217"
+                },
+                {
+                    "Name": "SenzaRisposta",
+                    "DisplayName": null,
+                    "DataType": 2,
+                    "MetaType": "guid92642CB2-A235-4E68-A9A5-C88DE7D5F760"
+                },
+                {
+                    "Name": "ChiamataInoltrante",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidAF28B263-ABBC-441A-BE85-E0DDFEE6C5E6"
+                },
+                {
+                    "Name": "ChiamataInoltrata",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid3FB49253-99F0-4A17-A15A-1845A67E99A5"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Chiamata",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#000000",
+            "IsSymmetricLink": false,
+            "ShowArrows": true,
+            "DisplayName": null,
+            "MetaType": "guid1A451DF5-5A8E-4FA7-AE50-4EABE35B47C7",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "PhoneNumber",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid109D5D32-EA94-4A6A-A134-1A70A629FB24"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Intestatario",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#7F7F7F",
+            "IsSymmetricLink": true,
+            "ShowArrows": false,
+            "DisplayName": null,
+            "MetaType": "guid2B55231E-521E-4502-8989-3BE1DB0B864D",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Simile",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#000000",
+            "IsSymmetricLink": true,
+            "ShowArrows": true,
+            "DisplayName": null,
+            "MetaType": "guidC9E54967-BBBF-494B-8348-B9D524F500FD",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Database Link",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#0000FF",
+            "IsSymmetricLink": false,
+            "ShowArrows": true,
+            "DisplayName": "Chiamato",
+            "MetaType": "guidB37E8FF4-0F23-429E-B206-9E34D5C9888C",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "Chiamato",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#FF00FF",
+            "IsSymmetricLink": false,
+            "ShowArrows": false,
+            "DisplayName": "CabinaUsata",
+            "MetaType": "guidEFD9C3B0-65F7-48AD-8B17-0D25E0CF2D9F",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "CabinaUsata",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#00FF00",
+            "IsSymmetricLink": false,
+            "ShowArrows": false,
+            "DisplayName": "CabinaAssociata",
+            "MetaType": "guid872424C2-7356-401A-AD62-2871857B4FB4",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "CabinaAssociata",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#B06000",
+            "IsSymmetricLink": true,
+            "ShowArrows": true,
+            "DisplayName": "AppartenenzaLista",
+            "MetaType": "guid71DDE3C9-8FB0-481B-8B3E-C6F1C84009E2",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "AppartenenzaLista",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#FF8888",
+            "IsSymmetricLink": false,
+            "ShowArrows": true,
+            "DisplayName": null,
+            "MetaType": "guid71BE4A3E-110A-4940-9582-1A7CC63DB57F",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "ChiamataIntepretata",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#B06000",
+            "IsSymmetricLink": true,
+            "ShowArrows": true,
+            "DisplayName": null,
+            "MetaType": "guidA9054C78-C47C-4956-9660-26EE2B0AB9F1",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "AppartenenzaIndagine",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#008040",
+            "IsSymmetricLink": false,
+            "ShowArrows": true,
+            "DisplayName": null,
+            "MetaType": "guid2906196C-BDB0-4909-B90E-97DF94DDC641",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "ChiamataDaReport",
+            "IconName": null,
+            "IconUri": null
+        },
+        {
+            "Color": "#800080",
+            "IsSymmetricLink": false,
+            "ShowArrows": true,
+            "DisplayName": null,
+            "MetaType": "guidE0E29B06-672E-4DB9-B839-D8D0FC4695A2",
+            "Property": [
+                {
+                    "Name": "identityProperty",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid53B9DA11-B136-40F4-94D1-B974A0256914"
+                },
+                {
+                    "Name": "DatabaseGuid",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guidD0E8070A-63FC-4096-9E70-F91FF7D14AE0"
+                },
+                {
+                    "Name": "DatabaseDescription",
+                    "DisplayName": null,
+                    "DataType": 4,
+                    "MetaType": "guid85D67128-95E8-4A4A-8829-6A0B1E2B6398"
+                }
+            ],
+            "Name": "CellaFineAssociata",
+            "IconName": null,
+            "IconUri": null
+        }
+    ],
+    "Attributes": [
+        {
+            "Marker": {
+                "Name": "Redsq.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 0
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "MNP: ",
+            "Suffix": null,
+            "Name": "MNPOccurrences",
+            "DisplayName": "PHONE_MNPOCCURRENCES",
+            "DataType": 4,
+            "MetaType": "guid89AB571C-1ED2-43DE-A2ED-184455D518C3"
+        },
+        {
+            "Marker": {
+                "Name": "Country.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "Country",
+            "DisplayName": "Country",
+            "DataType": 4,
+            "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+        },
+        {
+            "Marker": {
+                "Name": "Bluesq.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "Marca",
+            "DisplayName": "IMEI_BRAND",
+            "DataType": 4,
+            "MetaType": "guidED8D3576-CB65-4dd5-BDF6-E3DF5A9B1FC7"
+        },
+        {
+            "Marker": {
+                "Name": "Bluesq.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "Modello",
+            "DisplayName": "IMEI_MODEL",
+            "DataType": 4,
+            "MetaType": "guidC4710BC4-4556-4b6f-AD64-1EBF73044B41"
+        },
+        {
+            "Marker": {
+                "Name": "Bluesq.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 0
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "Provider",
+            "DisplayName": "CELL_PROVIDER",
+            "DataType": 4,
+            "MetaType": "guidB2A3B23C-07B8-4A87-8B45-4CD20079E79C"
+        },
+        {
+            "Marker": {
+                "Name": "City.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "City",
+            "DisplayName": "PUBPHONE_CITY",
+            "DataType": 4,
+            "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+        },
+        {
+            "Marker": {
+                "Name": "City.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "City",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+        },
+        {
+            "Marker": {
+                "Name": "City.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "City",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid6D5B39A9-41EC-477D-AA79-4CEF272FF067"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 0
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "DataTypeId",
+            "DisplayName": "DATAIMPORT_DATATYPEID",
+            "DataType": 4,
+            "MetaType": "guidc329f90d-3bf7-40c3-8d87-f6fe3cb8d5d4"
+        },
+        {
+            "Marker": {
+                "Name": "Bluedot",
+                "Uri": "VLImages/glyphs/circle_blue.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "NumCabina",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid6D46ED63-C752-412F-92C9-032CCBB5CDE8"
+        },
+        {
+            "Marker": {
+                "Name": "Bluedot",
+                "Uri": "VLImages/glyphs/circle_blue.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "Indagine",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid3DB01419-6A49-4C46-8CB3-5F8EAA618870"
+        },
+        {
+            "Marker": {
+                "Name": "Bluedot",
+                "Uri": "VLImages/glyphs/circle_blue.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "IndirizzoCabina",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guidBC83656E-31B3-4822-A3F5-70B36E8CA602"
+        },
+        {
+            "Marker": {
+                "Name": "Reddot",
+                "Uri": "VLImages/glyphs/circle_red.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "AutoCall",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid4C843605-B54C-4CDD-A7F8-54DF97EC44D8"
+        },
+        {
+            "Marker": {
+                "Name": "Reddot",
+                "Uri": "VLImages/glyphs/circle_red.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "ListeAppartenenza",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guidD718480F-E399-462F-86AC-9332C0AEE6B6"
+        },
+        {
+            "Marker": {
+                "Name": "Greendot",
+                "Uri": "VLImages/glyphs/circle_green.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "TipoListaSemplice",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid3C170D03-FD05-4C05-9E7D-96291A151240"
+        },
+        {
+            "Marker": {
+                "Name": "Bluesq",
+                "Uri": "VLImages/glyphs/square_blue.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "IsTetrasPhoneNum",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid9E9EB8B8-F197-4343-99B5-85F356B81E53"
+        },
+        {
+            "Marker": {
+                "Name": "sea_attach.bmp",
+                "Uri": "VLImages/glyphs/vlv_director.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "MultiMediaContent",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guidEAB532FF-B624-4130-9595-6646EE24AA25"
+        },
+        {
+            "Marker": {
+                "Name": "Reddot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "SottoIndagine",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guidCB0EAB0E-4786-47E7-A6C0-2CBEE25B3AA5"
+        },
+        {
+            "Marker": {
+                "Name": "Country.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 4
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "Country",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guidDAC78E2E-4C6F-4006-B291-0A42BAB2E339"
+        },
+        {
+            "Marker": {
+                "Name": "Bluetri.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "CellaInizioFine",
+            "DisplayName": "Cella Inizio/Fine",
+            "DataType": 4,
+            "MetaType": "guidC4710BC4-4556-4b6f-AD64-1EBF73044B41"
+        },
+        {
+            "Marker": {
+                "Name": "_time.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": " sec.",
+            "Name": "Durata",
+            "DisplayName": "Durata Chiamata",
+            "DataType": 2,
+            "MetaType": "guid601C0497-849D-471b-A7B1-EB033EF874D4"
+        },
+        {
+            "Marker": {
+                "Name": "Extension Number.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": null,
+            "Suffix": null,
+            "Name": "Categoria",
+            "DisplayName": "Categoria Chiamata",
+            "DataType": 4,
+            "MetaType": "guid69C60791-00C5-4a7c-AD8D-FD21DF62F249"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Chiamate: ",
+            "Suffix": null,
+            "Name": "Chiamata",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid91A8A633-41D9-4E64-8663-13F89B38E820"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Mms: ",
+            "Suffix": null,
+            "Name": "Mms",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid27790596-E63E-4246-ADC6-52FEB670CCEC"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Email: ",
+            "Suffix": null,
+            "Name": "Email",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid01728778-58F4-49C5-909C-9BA55B946CDF"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Fax: ",
+            "Suffix": null,
+            "Name": "Fax",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid5CCFD641-51A2-4957-9295-78A1ECCCFA1D"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Dati: ",
+            "Suffix": null,
+            "Name": "Dati",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guidBE56337C-6E70-4B0B-A496-EAAFD322624A"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Non riuscita: ",
+            "Suffix": null,
+            "Name": "NonRiuscita",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid9D7A05F5-31CE-4211-B477-F44F639804FD"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "VoIP: ",
+            "Suffix": null,
+            "Name": "VoIP",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid0CC9F607-7BE0-4381-BA9E-6322D4AD2021"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Videochiamata: ",
+            "Suffix": null,
+            "Name": "Videochiamata",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guidAD3DDBC6-A14E-4845-987C-07FB925EE37B"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Sconosciuta: ",
+            "Suffix": null,
+            "Name": "Sconosciuta",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guidE353402A-9778-474A-BCC3-07E07A791728"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Sms: ",
+            "Suffix": null,
+            "Name": "Sms",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid36CDBBA6-A9F1-44EC-A72A-F59424E75217"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Senza risposta: ",
+            "Suffix": null,
+            "Name": "SenzaRisposta",
+            "DisplayName": null,
+            "DataType": 2,
+            "MetaType": "guid92642CB2-A235-4E68-A9A5-C88DE7D5F760"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Inoltranti: ",
+            "Suffix": null,
+            "Name": "ChiamataInoltrante",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guidAF28B263-ABBC-441A-BE85-E0DDFEE6C5E6"
+        },
+        {
+            "Marker": {
+                "Name": "Yeldot.gif",
+                "Uri": "VLImages/glyphs/vlv_default.gif",
+                "Position": 5
+            },
+            "UserCanAdd": false,
+            "UserCanRemove": true,
+            "IsUser": false,
+            "ShowValue": true,
+            "ShowOnChart": true,
+            "Prefix": "Inoltrate: ",
+            "Suffix": null,
+            "Name": "ChiamataInoltrata",
+            "DisplayName": null,
+            "DataType": 4,
+            "MetaType": "guid3FB49253-99F0-4A17-A15A-1845A67E99A5"
+        }
+    ]
+}

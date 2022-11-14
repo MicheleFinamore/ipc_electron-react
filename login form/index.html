@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-card">
+            <input type="text" class="input">
+            <button class="btn" id="button" >Login</button>
+        </div>
+        
+    </div>
+    <div id="spinner"></div>
+</body>
+<script>
+    const button = document.getElementById('button')
+    const fetchAsync = async (url) => {
+        try{
+            let res = await fetch(url)
+            if(!res.ok){
+                console.error('response is not ok');
+                return
+            }else{
+                console.log(res);
+            }
+           
+
+            const data = await res.json()
+            return data;
+        }catch(error){
+            console.error('error in fetch ', error.message);
+        }
+    }
+    button.addEventListener('click', () => {
+
+        const spinner = document.getElementById('spinner')
+        const container = document.getElementById('container')
+        container.style.opacity = 0.5
+        spinner.classList.add('inlineBlock')
+        const endpoint = new URL('http://localhost:3990/api/jwt')
+        // endpoint.searchParams.set('APP_KEY', '498509340')
+        
+        fetchAsync(endpoint).then(data => {
+            
+                spinner.classList.remove('inlineBlock')
+                container.style.opacity = 1
+            
+                window.location.href = 'http://localhost:3990/api/redirectToElectron'
+        })
+
+
+    })
+</script>
+</html>

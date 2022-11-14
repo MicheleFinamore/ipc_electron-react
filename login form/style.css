@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #001E28;
+    position: relative;
+}
+
+.container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.form-card{
+    height: 300px;
+    width: 350px;
+    border-radius: 25px;
+    background-color: #0b4457;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    min-width: 80px;
+    background-color: #3eb4d8;
+    border: 0;
+    padding: 8px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
+
+.input{
+    height: 30px;
+    border: 0;
+    border-radius: 2px;
+}
+
+
+
+.input:focus-visible{
+    outline: none;
+}
+
+#spinner{
+  
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff ;
+    animation : spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    display: none;
+}
+
+.inlineBlock{
+    display: inline-block !important;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }

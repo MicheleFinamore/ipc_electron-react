@@ -62,7 +62,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -72,6 +72,24 @@ body{
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: var(--orange);
+  background: #074F57;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
+
+.cet-window-icon {
+  display : none !important;
+}
+
+.cet-titlebar.inactive .cet-window-title, .cet-titlebar.inactive .cet-controls-container .cet-icon svg, .cet-titlebar.inactive .cet-menubar .cet-menubar-menu-button{
+  opacity : 1 !important;
+}
+
+.cet-menubar .cet-menubar-menu-button:not(.disabled):focus, .cet-menubar .cet-menubar-menu-button:not(.disabled).open, .cet-menubar .cet-menubar-menu-button:not(.disabled):hover{
+  background-color: var(--orange) !important;
+}
+
+.cet-menubar-menu-container {
+  background-color : var(--orange) !important;
+  top : 30px !important;
+}
+

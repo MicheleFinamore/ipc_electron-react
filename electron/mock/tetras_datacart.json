@@ -1,0 +1,116 @@
+{
+    "items": [
+        {
+            "itemType": "entity",
+            "label": "00201209130633",
+            "style": "FLAG EG",
+            "attributes": {
+                "Flag EG": {
+                    "value": "EG"
+                }
+            },
+            "cards": [
+                {
+                    "title": "-MOBILE-EG-",
+                    "text": "Parametri utenza:\\n\\nTipo: MOBILE ()\\nNazione: EG",
+                    "sourceDetails": {
+                        "source": "Numero di telefono 00201209130633",
+                        "sourceType": "Tetras"
+                    }
+                }
+            ],
+            "key": "00201209130633",
+            "type": "PhoneNumber",
+            "properties": {
+                "Nation": {
+                    "value": "EG"
+                },
+                "AccountType": {
+                    "value": "PhoneNumber"
+                },
+                "PhoneNumber": {
+                    "value": "00201209130633"
+                },
+                "DatabaseGuid": {
+                    "value": ""
+                }
+            }
+        },
+        {
+            "itemType": "entity",
+            "label": "00213551798333",
+            "style": "FLAG DZ",
+            "attributes": {
+                "Flag DZ": {
+                    "value": "DZ"
+                }
+            },
+            "cards": [
+                {
+                    "title": "-MOBILE-DZ-",
+                    "text": "Parametri utenza:\\n\\nTipo: MOBILE ()\\nNazione: DZ",
+                    "sourceDetails": {
+                        "source": "Numero di telefono 00213551798333",
+                        "sourceType": "Tetras"
+                    }
+                }
+            ],
+            "customProps": {
+                "ANB.visible": "default|iconframe",
+                "ANB.iconframemargin": "0"
+            },
+            "key": "00213551798333",
+            "type": "PhoneNumber",
+            "properties": {
+                "Nation": {
+                    "value": "DZ"
+                },
+                "AccountType": {
+                    "value": "PhoneNumber"
+                },
+                "PhoneNumber": {
+                    "value": "00213551798333"
+                },
+                "DatabaseGuid": {
+                    "value": ""
+                }
+            }
+        },
+        {
+            "itemType": "entity",
+            "label": "0031614674233",
+            "style": "FLAG NL",
+            "attributes": {
+                "Flag NL": {
+                    "value": "NL"
+                }
+            },
+            "cards": [
+                {
+                    "title": "-MOBILE-nl-",
+                    "text": "Parametri utenza:\\n\\nTipo: MOBILE ()\\nNazione: nl",
+                    "sourceDetails": {
+                        "source": "Numero di telefono 0031614674233",
+                        "sourceType": "Tetras"
+                    }
+                }
+            ],
+            "key": "0031614674233",
+            "type": "PhoneNumber",
+            "properties": {
+                "Nation": {
+                    "value": "NL"
+                },
+                "AccountType": {
+                    "value": "PhoneNumber"
+                },
+                "PhoneNumber": {
+                    "value": "0031614674233"
+                },
+                "DatabaseGuid": {
+                    "value": ""
+                }
+            }
+        }
+    ]
+}

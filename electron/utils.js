@@ -1,4 +1,6 @@
 const fetch = require("electron-fetch").default;
+const tcpPortUsed = require("tcp-port-used");
+
 
 exports.getAsync = async (endpoint) => {
   try {
@@ -26,11 +28,44 @@ exports.postAsync = async (endpoint = "", data = {}) => {
     referrerPolicy: "no-referrer",
     redirect: "manual",
   });
+ 
 
-  
-
-  return response;
+  const resp = await response.json();
+  return resp;
 };
+
+
+
+exports.waitPortListening = (port, callback) => {
+  tcpPortUsed.waitUntilUsed(port, 500, 1800000).then(
+    () => {
+      console.log(
+        "Port 5500 is now listening... I'm sending the register request"
+      );
+      console.log("Get DMX ...");
+      callback();
+
+      // let datamodel_conf_raw = fs.readFileSync(
+      //   path.join(__dirname, "/mock/custom_datamodel.json")
+      // );
+      // const pack = {
+      //   dmx: JSON.parse(datamodel_conf_raw),
+      //   type: "REGISTER",
+      //   // dmx: datamodel_conf_raw,
+      // };
+      // console.log("Parsed DMX ...");
+      // console.log(pack);
+      // console.log("Sending the request...");
+
+      // doPostRequest("http://localhost:5500/register", pack);
+    },
+    (err) => {
+      console.error("Error on waitUntilused:", err.message);
+      throw new Error(`Error in waitingUntilUse : ${err.message}`);
+    }
+  );
+};
+
 
 // module.exports = {
 //     getAsync,
