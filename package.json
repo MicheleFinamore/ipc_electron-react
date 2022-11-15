@@ -33,6 +33,13 @@
   },
   "homepage": "./",
   "build": {
+    "nsis": {
+      "oneClick": false,
+      "uninstallDisplayName": "ipc-viewer-uninstaller",
+      "allowToChangeInstallationDirectory": true,
+      "include": "build/test.nsi",
+      "runAfterFinish" : false
+    },
     "appId": "com.app.id",
     "productName": "Ipc Server Electron React",
     "files": [
@@ -65,7 +72,7 @@
   },
   "devDependencies": {
     "electron": "^19.0.7",
-    "electron-builder": "^23.1.0",
+    "electron-builder": "^23.6.0",
     "nodemon": "^2.0.19"
   },
   "keywords": [],
